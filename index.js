@@ -10,12 +10,15 @@ Returns an array with all the posts data.
     Array at [7] is the Quiz data
 */
 
-fetch('https://capibility.com/headless/wp-json/wp/v2/posts')
+const url = 'https://capibility.com/headless/wp-json/wp/v2/posts';
+
+fetch(url)
 .then(res => res.json())
 .then(json => {
+    console.log(json)
     createLandingPage(json[3]);
 })
 
 function createLandingPage(data) {
-    console.log(data)
+    console.log(data.content.rendered);
 }
