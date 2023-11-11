@@ -1,7 +1,8 @@
 :root {
     --pr-colour-1: #FFFFFF;
     --pr-colour-2: #F5AE2B;
-    --pr-colour-3: #4364F7;
+    --pr-colour-3: #0052D4;
+    --pr-colour-35: #4364F7;
     --pr-colour-4: #F16622;
     --pr-colour-5: #062F6C;
     --pr-colour-6: #000000;
@@ -10,15 +11,38 @@
     --sd-colour-3: #E8530A;
     --sd-colour-4: #E4E3FF;
     --sd-colour-4: #B03535;
+    --header-height: 60px;
 }
 
 section {
     height: 100vh;
 }
 
+header {
+    height: var(--header-height);
+    background-color: #0052D4;
+}
+.header-padding {
+    padding: 0 20px;
+}
+
+.nav-flex, ul {
+    display: flex;
+    height: var(--header-height);
+    align-items: center;
+}
+
+.nav-flex{
+    justify-content: space-between; 
+}
+
+ul {
+    width: 50%;
+    justify-content: space-between;
+}
 a {
     text-decoration: none;
-    
+
 }
 
 #image-container {
@@ -27,14 +51,15 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
 }
+#landing-page {
+    background-color: var(--pr-colour-3);
+}
 
 #default-capy-svg {
     background-image: url(img/capy.svg);
 }
 
-#landing-page {
-    background-color: var(--pr-colour-5);
-}
+
 
 #video {
     background-color: var(--sd-colour-2);
