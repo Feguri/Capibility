@@ -11,3 +11,55 @@
     --sd-colour-4: #E4E3FF;
     --sd-colour-4: #B03535;
 }
+
+section {
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+#image-container {
+    background-image: url(img/unsplash_QckxruozjRg.png);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#default-capy-svg {
+    background-image: url(img/capy.svg);
+}
+
+#landing-page {
+    background-color: var(--pr-colour-5);
+}
+
+#video {
+    background-color: var(--sd-colour-2);
+}
+
+#why-capy {
+    background-color: var(--pr-colour-3);
+}
+
+#mentor {
+    background-color: var(--pr-colour-1);
+}
+
+#quiz{
+    background-color: var(--pr-colour-4);
+}
+
+#contact {
+    background-color: var(--pr-colour-2);
+}
+
+#our-partners {
+    background-color: var(--pr-colour-1);
+}
+
+footer {
+    background-color: var(--pr-colour-5);
+}
