@@ -12,13 +12,15 @@ Returns an array with all the posts data.
 
 const url = 'https://capibility.com/headless/wp-json/wp/v2/posts';
 
-fetch(url)
-.then(res => res.json())
-.then(json => {
-    console.log(json)
-    createLandingPage(json[3]);
-})
+async function fetchFavourites(url){
+    const repsonse = await fetch(url);
+    const data = await repsonse.json();
+    displayData(data);
+  }
 
-function createLandingPage(data) {
-    console.log(data.content.rendered);
+  //call function to fetch data
+  fetchFavourites(url);
+
+function displayData(data){
+  console.log(data);
 }
