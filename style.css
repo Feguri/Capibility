@@ -13,17 +13,69 @@
     --sd-colour-4: #B03535;
     --header-height: 60px;
 }
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
 
+a {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    color: var(--pr-colour-1);
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 16px;
+}
+h1 {
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 92px;
+    font-style: normal;
+    font-weight: 900; 
+    line-height: normal; 
+}
+.hero-1 {
+    font-size: 74px;
+}
+.hero-2 {
+    font-size: 140px;
+    bottom: 50px;
+    position: relative;
+}
+
+.font-bigger {
+    font-size: 140px;
+}
+
+.container{
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+    padding: 0 200px;
+}
+
+.logo {
+    width: 229px;
+    height: 48px;
+    flex-shrink: 0; 
+}
+
+.hero-text {
+    width: 460px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: var(--pr-colour-1);
+}
 section {
     height: 100vh;
 }
 
 header {
     height: var(--header-height);
-    background-color: #0052D4;
+
 }
 .header-padding {
-    padding: 0 20px;
+    padding: 10px 20px;
 }
 
 .nav-flex, ul {
@@ -40,23 +92,61 @@ ul {
     width: 50%;
     justify-content: space-between;
 }
-a {
-    text-decoration: none;
-
-}
 
 #image-container {
     background-image: url(img/unsplash_QckxruozjRg.png);
+    /* not vh because ... */
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
+    /* the line below prevents the capybara svg from overflowing into the section below */
+    clip-path:inset(0);
 }
 #landing-page {
     background-color: var(--pr-colour-3);
 }
 
+/* controls the style for the Language Button */
+.lan-btn {
+    background-color: var(--pr-colour-5);
+    color: var(--pr-colour-1);
+    border: none;
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    box-shadow: 2px 5px 16px 0px #0b325e7c;
+}
+.lan-btn:hover {
+    cursor: pointer;
+}
+
+.underline-hover-effect {
+    display: inline-block;
+    padding-bottom: 0.5rem; /* Defines space between text and underline */
+    position: relative;
+}
+.underline-hover-effect::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--pr-colour-1);
+    transition: width 0.25s ease-out;
+}
+.underline-hover-effect:hover::before {
+    width: 100%;
+}
+
 #default-capy-svg {
     background-image: url(img/capy.svg);
+    background-repeat: no-repeat;
+    margin-left: 150px;
+    width: 770px;
+    height: 770px;
+    flex-shrink: 0; 
+    transform: rotate(10deg) scale(1.1);
 }
 
 
