@@ -48,6 +48,15 @@ h1 {
     width: 50px;
     height: 50px;
 }
+
+@keyframes lose-opacity {
+    0%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
 .hamburguer:hover {
     cursor: pointer;
 }
@@ -157,7 +166,6 @@ ul {
     flex-shrink: 0; 
     transform: rotate(10deg) scale(1.1);
 }
-
 
 
 #video {
