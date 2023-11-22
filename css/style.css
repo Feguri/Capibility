@@ -1,3 +1,4 @@
+/* ========================= PR STANDS FOR PRIMARY AND SD FOR SECONDARY ========================= */
 :root {
     --pr-colour-1: #FFFFFF;
     --pr-colour-2: #F5AE2B;
@@ -6,6 +7,7 @@
     --pr-colour-4: #F16622;
     --pr-colour-5: #062F6C;
     --pr-colour-6: #000000;
+    --pr-colour-7: #E4E3FF;
     --sd-colour-1: #44D326;
     --sd-colour-2: #87BBD8;
     --sd-colour-3: #E8530A;
@@ -16,6 +18,12 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+}
+
+/* ========================= STYLES THAT CONTROL THE LANDING PAGE + THE REST OF THE PAGE ========================= */
+
+#landing-page {
+    background-color: var(--pr-colour-3);
 }
 
 a {
@@ -39,7 +47,7 @@ h1 {
 }
 .hero-2 {
     font-size: 140px;
-    bottom: 50px;
+    bottom: 60px;
     position: relative;
 }
 
@@ -47,6 +55,32 @@ h1 {
     display: none;
     width: 50px;
     height: 50px;
+}
+
+.quiz-btn {
+    /* Layout */
+    width: 344.028px;
+    height: 79px;
+    flex-shrink: 0;
+    border-radius: 93px;
+    background: var(--pr-colour-4);
+    box-shadow: 0px 0px 83px 9px var(--pr-colour-35);
+    border: none;
+    margin-top: 35px;
+    transition: box-shadow 0.2s;
+
+    /* Typography */
+    color: var(--pr-colour-1);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.quiz-btn:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 120px 20px var(--pr-colour-35);
 }
 
 @keyframes lose-opacity {
@@ -96,6 +130,15 @@ header {
     padding: 10px 20px;
 }
 
+p {
+    font-family: 'Poppins', sans-serif;
+    line-height: normal;
+    font-size: 18px;
+    letter-spacing: normal;
+    position: relative;
+    bottom: 40px;
+}
+
 .nav-flex, ul {
     display: flex;
     height: var(--header-height);
@@ -119,9 +162,6 @@ ul {
     background-repeat: no-repeat;
     /* the line below prevents the capybara svg from overflowing into the section below */
     clip-path:inset(0);
-}
-#landing-page {
-    background-color: var(--pr-colour-3);
 }
 
 /* controls the style for the Language Button */
@@ -167,10 +207,17 @@ ul {
     transform: rotate(10deg) scale(1.1);
 }
 
-
+/* ========================= STYLES THAT CONTROL THE VIDEO SECTION ========================= */
 #video {
-    background-color: var(--sd-colour-2);
+    background-color: var(--pr-colour-7);
+    background: url(../img/grainy-texture.png), rgba(228, 227, 255,1) 0% 0% / 44.40000057220459px 44.40000057220459px repeat;
+    mix-blend-mode: overlay;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 #why-capy {
     background-color: var(--pr-colour-3);
