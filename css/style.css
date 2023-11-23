@@ -14,6 +14,7 @@
     --sd-colour-4: #E4E3FF;
     --sd-colour-4: #B03535;
     --header-height: 60px;
+    --default-padding: 200px;
 }
 html {
     scroll-behavior: smooth;
@@ -42,6 +43,22 @@ h1 {
     font-weight: 900; 
     line-height: normal; 
 }
+h2 {
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 900; 
+    line-height: 70px; 
+}
+
+.text {
+    padding-top: 150px;
+}
+.text p {
+    margin-top: 150px;
+}
+
 .hero-1 {
     font-size: 74px;
 }
@@ -137,6 +154,7 @@ p {
     letter-spacing: normal;
     position: relative;
     bottom: 40px;
+    color: var(--pr-colour-1);
 }
 
 .nav-flex, ul {
@@ -200,11 +218,20 @@ ul {
 #default-capy-svg {
     background-image: url(../img/capy.svg);
     background-repeat: no-repeat;
-    margin-left: 150px;
+    margin-left: 400px;
     width: 770px;
     height: 770px;
     flex-shrink: 0; 
     transform: rotate(10deg) scale(1.1);
+}
+#default-capy2-svg {
+    margin-top: 100px;
+    margin-left: 200px;
+    background-image: url(../img/capy2.svg);
+    background-repeat: no-repeat;
+    width: 838px;
+    height: 878px;
+    flex-shrink: 0; 
 }
 
 /* ========================= STYLES THAT CONTROL THE VIDEO SECTION ========================= */
@@ -221,9 +248,16 @@ ul {
     background-size: cover;
 }
 
-
+/* ========================= STYLES THAT CONTROL WHY CAPY SECTION ========================= */
 #why-capy {
     background-color: var(--pr-colour-35);
+}
+
+.why-capy-container {
+    padding: 20px 20px;
+    display: flex;
+    padding: 0 var(--default-padding);
+    height: 100vh;
 }
 
 .pattern {

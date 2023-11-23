@@ -4,8 +4,9 @@ const pattern1 = document.getElementById('pattern');
 let scrollProgress = 0;
 let previousScrollY = window.scrollY;
 let isScrolling;
+let seed = 600;
 // change 'progressSpeed' for a faster or slower animation of the background patterns
-const progresSpeed = 2;
+const progresSpeed = 3;
 
 // makes the animation not so fast
 function debounce(callback, delay) {
@@ -32,8 +33,7 @@ window.addEventListener('scroll', function () {
         previousScrollY = currentScrollY;
 
         // Calculate the background position based on scroll progress
-        let product = -1300 - scrollProgress;
-        console.log(product);
+        let product = -seed - scrollProgress;
         pattern1.style.backgroundPositionY = `${product}px`;
     }, 5); // Adjust the delay (in milliseconds) to control the rate of updates
 });

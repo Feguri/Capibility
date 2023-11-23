@@ -10,22 +10,33 @@
  *   480-less    - phone landscape & smaller
  * --------------------------------------------
  */
+ :root {
+    --padding-normal: 100px;
+    --padding-laptop: 70px;
+    --padding-ipad-landscape: 50px;
+    --padding-mobile: 50px;
+    --padding-tiny-mobile: 50px;
+ }
  @media all and (min-width: 1280px) and (max-width: 1680px) {
     #default-capy-svg {
-        margin-left: 120px;
+        margin-left: 350px;
     }
     .container {
-        padding: 0 100px;
+        padding: 0 var(--padding-normal);
     }
  }
  @media all and (min-width: 1024px) and (max-width: 1280px) {
     #default-capy-svg {
-        margin-left: 75px;
+        margin-left: 250px;
         width: 650px;
         margin-top: 50px;
     }
     .container {
-        padding: 0 70px;
+        padding: 0 var(--padding-laptop);
+    }
+    .pattern {
+        background-size: auto;
+
     }
 }
 
@@ -39,7 +50,10 @@
         width: 64%;
     }
     .container {
-        padding: 0 50px;
+        padding: 0 var(--padding-ipad-landscape);
+    }
+    .pattern {
+        background-size: auto;
     }
     .hero-1 {
         font-size: 54px;
@@ -57,7 +71,12 @@
         width: 64%;
     }
     .container {
-        padding: 0 50px;
+        padding: 0 var(--padding-mobile);
+        justify-content: center;
+    }
+    .pattern {
+        background-size: auto;
+        background-position-y: -200px;
     }
     .hero-1 {
         font-size: 54px;
@@ -84,7 +103,11 @@
         width: 64%;
     }
     .container {
-        padding: 0 50px;
+        padding: 0 var(--padding-tiny-mobile);
+    }
+    /* this prevents the patterned background from getting tinier and tinier */
+    .pattern {
+        background-size: auto;
     }
     .hero-1 {
         font-size: 54px;
