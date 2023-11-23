@@ -1,0 +1,7 @@
+const pattern1 = document.getElementById('pattern');
+
+window.addEventListener('scroll', function() {
+    let product = (1300-(this.window.scrollY));
+    console.log(product);
+    pattern1.style.backgroundPositionY = `${product}px`;
+})

@@ -1,0 +1,33 @@
+const pattern1 = document.getElementById('pattern');
+let scrollProgress = 0;
+let previousScrollY = window.scrollY;
+let isScrolling;
+
+function debounce(callback, delay) {
+    clearTimeout(isScrolling);
+    isScrolling = setTimeout(function () {
+        callback();
+    }, delay);
+}
+
+window.addEventListener('scroll', function () {
+    debounce(function () {
+        // Check the scroll direction
+        const currentScrollY = window.scrollY;
+        if (currentScrollY > previousScrollY) {
+            // Scrolling down
+            scrollProgress += 1;
+        } else if (currentScrollY < previousScrollY) {
+            // Scrolling up
+            scrollProgress -= 1;
+        }
+
+        // Update the previous scroll position
+        previousScrollY = currentScrollY;
+
+        // Calculate the background position based on scroll progress
+        let product = 1300 - scrollProgress;
+        console.log(product);
+        pattern1.style.backgroundPositionY = `${product}px`;
+    }, 20); // Adjust the delay (in milliseconds) to control the rate of updates
+});

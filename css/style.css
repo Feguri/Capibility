@@ -210,17 +210,29 @@ ul {
 /* ========================= STYLES THAT CONTROL THE VIDEO SECTION ========================= */
 #video {
     background-color: var(--pr-colour-7);
-    background: url(../img/grainy-texture.png), rgba(228, 227, 255,1) 0% 0% / 44.40000057220459px 44.40000057220459px repeat;
-    mix-blend-mode: overlay;
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.texture {
+    background: url(../img/grainy-texture.png), rgba(228, 227, 255,1) 0% 0% / 44.40000057220459px 44.40000057220459px repeat;
+    mix-blend-mode: soft-light;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 #why-capy {
-    background-color: var(--pr-colour-3);
+    background-color: var(--pr-colour-35);
+}
+
+.pattern {
+    background-image: url(../img/pattern.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    /* this is controlled with javascript */
+    background-position-y: -200px;
 }
 
 #mentor {
