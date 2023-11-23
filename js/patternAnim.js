@@ -1,6 +1,7 @@
 // an animation that makes the background pattern go up on scroll down and down on scroll up!
 
 const pattern1 = document.getElementById('pattern');
+const pattern2 = document.getElementById('pattern2');
 let scrollProgress = 0;
 let previousScrollY = window.scrollY;
 let isScrolling;
@@ -35,5 +36,6 @@ window.addEventListener('scroll', function () {
         // Calculate the background position based on scroll progress
         let product = -seed - scrollProgress;
         pattern1.style.backgroundPositionY = `${product}px`;
+        pattern2.style.backgroundPositionY = `${product}px`;
     }, 5); // Adjust the delay (in milliseconds) to control the rate of updates
 });

@@ -269,9 +269,11 @@ ul {
     padding: 0 var(--default-padding);
     height: 100vh;
 }
-
-.pattern {
+#pattern {
     background-image: url(../img/pattern.png);
+}
+.pattern {
+    
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -288,6 +290,23 @@ ul {
 }
 #mentor p {
     color: black;
+    margin-bottom: 60px;
+}
+.blue {
+    color: var(--pr-colour-35);
+}
+h3 {
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+h3 a {
+    font-size: 36px;
+    color: var(--pr-colour-35);
+    text-decoration: underline;
+    text-transform: none;
 }
 
 .why-capy-container {
@@ -297,12 +316,107 @@ ul {
     height: 100vh;
 }
 
+/* ========================= STYLES THAT CONTROL QUIZ SECTION ========================= */
 #quiz{
     background-color: var(--pr-colour-4);
+    clip-path: inset(0);
+}
+#quiz h2, #contact h2 {
+    text-align: center;
+    padding-top: 70px;
+}
+.start-btn {
+    /* layout */
+    width: 189px;
+    height: 65.775px;
+    flex-shrink: 0;
+
+    /* style */
+    border-radius: 93px;
+    background: #FFF;
+    box-shadow: 0px 0px 111px 4px #F3D295;
+
+    /* typography */
+    color: #F16622;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: box-shadow 0.2s;
+    border: none;
+}
+.start-btn:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 151px 30px #F3D295;
+}
+.center-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+.different-capys-grid{
+    position: relative;
+    bottom: 120px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
+/* ========================= STYLES THAT CONTROL CONTACT SECTION ========================= */
 #contact {
     background-color: var(--pr-colour-2);
+}
+form {
+    margin-top: 90px;
+    width: 40%;
+}
+input, textarea {
+    font-family: 'Poppins', sans-serif;
+}
+input {
+    background: #d9d9d9c2;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+    height: 30px;
+    border: 3px solid transparent;
+}
+input:focus,textarea:focus {
+    border: 3px solid #ffffff;
+    outline: none;
+}
+textarea {
+    border: 3px solid transparent;
+    background: #d9d9d9c2;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+.form-container {
+    display: flex;
+    justify-content: center;
+
+    color: var(--pr-colour-1);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.form-block {
+    display: flex;
+    flex-direction: column;
+}
+.send-email-btn {
+    display: flex;
+    width: 224px;
+    height: 51px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+}
+#pattern2 {
+    background-image: url(../img/pattern2.png);
 }
 
 #our-partners {
