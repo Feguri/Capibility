@@ -14,7 +14,7 @@
     --sd-colour-4: #E4E3FF;
     --sd-colour-4: #B03535;
     --header-height: 60px;
-    --default-padding: 200px;
+    --default-padding: 300px;
 }
 html {
     scroll-behavior: smooth;
@@ -120,7 +120,7 @@ h2 {
     display: flex;
     margin-top: 5%;
     justify-content: space-between;
-    padding: 0 200px;
+    padding: 0 var(--default-padding);
 }
 
 .logo {
@@ -218,7 +218,7 @@ ul {
 #default-capy-svg {
     background-image: url(../img/capy.svg);
     background-repeat: no-repeat;
-    margin-left: 400px;
+    margin-left: 200px;
     width: 770px;
     height: 770px;
     flex-shrink: 0; 

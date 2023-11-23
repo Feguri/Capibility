@@ -11,7 +11,7 @@
  * --------------------------------------------
  */
  :root {
-    --padding-normal: 100px;
+    --padding-normal: 150px;
     --padding-laptop: 70px;
     --padding-ipad-landscape: 50px;
     --padding-mobile: 50px;
@@ -19,7 +19,8 @@
  }
  @media all and (min-width: 1280px) and (max-width: 1680px) {
     #default-capy-svg {
-        margin-left: 350px;
+        margin-left: 120px;
+        width: 650px;
     }
     .container {
         padding: 0 var(--padding-normal);

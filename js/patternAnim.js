@@ -4,7 +4,7 @@ const pattern1 = document.getElementById('pattern');
 let scrollProgress = 0;
 let previousScrollY = window.scrollY;
 let isScrolling;
-let seed = 600;
+let seed = 300;
 // change 'progressSpeed' for a faster or slower animation of the background patterns
 const progresSpeed = 3;
 
