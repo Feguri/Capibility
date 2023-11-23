@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capiskills</title>
+    <title>Capibility</title>
     <script src="js/index.js" defer></script>
     <script src="js/hamburguerAnim.js" defer></script>
     <script src="js/patternAnim.js" defer></script>
+    <!-- smtpjs to help with the contact form -->
+    <script src="https://smtpjs.com/v3/smtp.js" defer></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -84,7 +86,7 @@
                     <div class="container">
                         <div class="hero-text">
                             <h1><span class="hero-1">Test Your</span><br><span class="hero-2">Skills!</span></h1>
-                            <p>CapySkills aims to inspire students to embrace the joy of learning while equipping them to become visionary 21st-century leaders!</p>
+                            <p>Capibility aims to inspire students to embrace the joy of learning while equipping them to become visionary 21st-century leaders!</p>
                             <a href="#quiz"><button class="quiz-btn">TAKE THE QUIZ</button></a>
                             
                         </div>
@@ -143,7 +145,7 @@
             <div id="pattern2" class="pattern">
               <h2>Contact Us</h2>
               <div class="form-container">
-                <form action="" method="get" class="form">
+                <form onsubmit="sendEmail(); reset(); return false;" action="" method="get" class="form">
                   <div class="form-block">
                     <label for="name">Enter your name: </label>
                     <input type="text" name="name" id="name" required />
@@ -161,7 +163,7 @@
                     <textarea name="message" id="message" cols="30" rows="10"></textarea>
                   </div>
                   <div class="form-block">
-                    <input type="submit" value="SEND EMAIL" />
+                    <input class="send-email-btn" type="submit" value="SEND EMAIL" />
                   </div>
                 </form>
               </div>
@@ -175,5 +177,21 @@
     <footer id="footer" class="page">
 
     </footer>
+
+    <script>
+      function sendEmail() {
+        Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "",
+            Password : "",
+            To : '2073558@edu.vaniercollege.qc.ca',
+            From : document.getElementById('email').value,
+            Subject : document.getElementById('subject').value,
+            Body : "And this is the body"
+        }).then(
+          message => alert(message)
+        );
+      }
+    </script>
 </body>
 </html>
