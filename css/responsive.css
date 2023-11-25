@@ -26,6 +26,7 @@
     }
     .container, .why-capy-container {
         padding: 0 var(--padding-normal);
+        
     }
     .hero-1 {
         font-size: 50px;
@@ -121,6 +122,7 @@
         text-align: center;
         padding-top: 40px;
         font-size: 45px;
+        line-height: 40px;
     }
     #default-capy2-svg {
         margin-top: -120px;
@@ -185,6 +187,7 @@
         text-align: center;
         padding-top: 40px;
         font-size: 45px;
+        line-height: 45px;
     }
     #default-capy2-svg {
         margin-top: -120px;
@@ -198,6 +201,14 @@
         right: 160px;
         margin-right: -200px;
         position: relative;
+    }
+    form {
+        margin-top: 30px;
+        width: 60%;
+    }
+    #our-partners {
+        flex-direction: column;
+        height: 100dvh;
     }
   }
  
@@ -241,11 +252,30 @@
     .text {
         padding-top: 50px;
     }
+    #quiz h2, #contact h2 {
+        text-align: center;
+        padding-top: 40px;
+        font-size: 35px;
+        line-height: 35px;
+    }
     #default-capy2-svg {
         display: none;
     }
     #default-capy3-svg {
         display: none;
+    }
+    .different-capys-grid {
+        display: none;
+    }
+    .center-btn {
+        height: 73vh;
+    }
+    form {
+        width: 70%;
+    }
+    #our-partners {
+        flex-direction: column;
+        height: 100dvh;
     }
   }
  
@@ -288,6 +318,12 @@
     .text {
         padding-top: 50px;
     }
+    #quiz h2, #contact h2 {
+        text-align: center;
+        padding-top: 40px;
+        font-size: 30px;
+        line-height: 30px;
+    }
     #default-capy2-svg {
         display: none;
     }
@@ -297,8 +333,21 @@
     header {
         height: 80px;
     }
+    form {
+        width: 90%;
+    }
     .header-padding {
         padding: 5px 10px;
+    }
+    .different-capys-grid {
+        display: none;
+    }
+    .center-btn {
+        height: 73vh;
+    }
+    #our-partners {
+        flex-direction: column;
+        height: 100dvh;
     }
   }
  

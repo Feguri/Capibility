@@ -1,7 +1,7 @@
 /* ========================= PR STANDS FOR PRIMARY AND SD FOR SECONDARY ========================= */
 :root {
     --pr-colour-1: #FFFFFF;
-    --pr-colour-2: #F5AE2B;
+    --pr-colour-2: #e99d11;
     --pr-colour-3: #0052D4;
     --pr-colour-35: #4364F7;
     --pr-colour-4: #F16622;
@@ -141,7 +141,6 @@ section {
 
 header {
     height: var(--header-height);
-
 }
 .header-padding {
     padding: 10px 20px;
@@ -369,7 +368,7 @@ h3 a {
     background-color: var(--pr-colour-2);
 }
 form {
-    margin-top: 70px;
+    margin-top: 30px;
     width: 40%;
 }
 input, textarea {
@@ -407,14 +406,16 @@ textarea {
 .form-block {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
+
 .send-email-btn {
     width: 224px;
     height: 51px;
     background-color: var(--pr-colour-1);
     color: #FFA500;
     font-weight: 600;
+    margin-top: 5px;
 }
 .send-email-btn:hover {
     cursor: pointer;
@@ -425,8 +426,13 @@ textarea {
 
 #our-partners {
     background-color: var(--pr-colour-1);
+    height: 50dvh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 footer {
     background-color: var(--pr-colour-5);
+    height: 100dvh;
 }
