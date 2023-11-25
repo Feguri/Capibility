@@ -24,7 +24,7 @@
         margin-left: 100px;
         width: 450px;
     }
-    .container {
+    .container, .why-capy-container {
         padding: 0 var(--padding-normal);
     }
     .hero-1 {
@@ -47,6 +47,17 @@
     p {
         font-size: 16px;
     }
+    h2 {
+        font-size: 60px;
+    }
+    .text {
+        padding-top: 50px;
+    }
+    #default-capy2-svg {
+        margin-top: -120px;
+        margin-left: 20px;
+        transform: scale(0.7);
+    }
  }
  @media all and (min-width: 1024px) and (max-width: 1280px) {
     #default-capy-svg {
@@ -54,7 +65,7 @@
         width: 450px;
         margin-top: 50px;
     }
-    .container {
+    .container, .why-capy-container {
         padding: 0 var(--padding-laptop);
     }
     .pattern {
@@ -78,6 +89,20 @@
         margin-top: 15px;
         font-size: 20px;
     }
+    p {
+        font-size: 15px;
+    }
+    h2 {
+        font-size: 60px;
+    }
+    .text {
+        padding-top: 50px;
+    }
+    #default-capy2-svg {
+        margin-top: -120px;
+        margin-left: -40px;
+        transform: scale(0.7);
+    }
 }
 
  @media all and (min-width: 768px) and (max-width: 1024px) {
@@ -89,7 +114,7 @@
     ul {
         width: 64%;
     }
-    .container {
+    .container, .why-capy-container {
         padding: 0 var(--padding-ipad-landscape);
     }
     .pattern {
@@ -112,6 +137,20 @@
         margin-top: 15px;
         font-size: 20px;
     }
+    p {
+        font-size: 14px;
+    }
+    h2 {
+        font-size: 50px;
+    }
+    .text {
+        padding-top: 50px;
+    }
+    #default-capy2-svg {
+        margin-top: -120px;
+        margin-left: -20px;
+        transform: scale(0.7);
+    }
   }
  
  @media all and (min-width: 480px) and (max-width: 768px) {
@@ -121,7 +160,13 @@
     ul {
         width: 64%;
     }
-    .container {
+    p {
+        font-size: 14px;
+    }
+    h2 {
+        font-size: 50px;
+    }
+    .container, .why-capy-container {
         padding: 0 var(--padding-mobile);
         justify-content: center;
     }
@@ -144,6 +189,12 @@
     ul {
         justify-content: flex-end;
     }
+    .text {
+        padding-top: 50px;
+    }
+    #default-capy2-svg {
+        display: none;
+    }
   }
  
  @media all and (max-width: 480px) {
@@ -153,7 +204,13 @@
     ul {
         width: 64%;
     }
-    .container {
+    p {
+        font-size: 14px;
+    }
+    h2 {
+        font-size: 50px;
+    }
+    .container, .why-capy-container {
         padding: 0 var(--padding-tiny-mobile);
     }
     /* this prevents the patterned background from getting tinier and tinier */
@@ -174,6 +231,12 @@
     }
     ul {
         justify-content: flex-end;
+    }
+    .text {
+        padding-top: 50px;
+    }
+    #default-capy2-svg {
+        display: none;
     }
   }
  
