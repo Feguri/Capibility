@@ -17,19 +17,41 @@
     --padding-mobile: 50px;
     --padding-tiny-mobile: 50px;
  }
+ /* large laptop */
  @media all and (min-width: 1280px) and (max-width: 1680px) {
     #default-capy-svg {
-        margin-left: 120px;
-        width: 650px;
+        margin-top: 60px;
+        margin-left: 100px;
+        width: 450px;
     }
     .container {
         padding: 0 var(--padding-normal);
     }
+    .hero-1 {
+        font-size: 50px;
+    }
+    .hero-2 {
+        font-size: 100px;
+        bottom: 50px;
+        position: relative;
+    }
+    .container {
+        margin-top: 0;
+    }
+    .quiz-btn {
+        width: 244.028px;
+        height: 69px;
+        margin-top: 15px;
+        font-size: 20px;
+    }
+    p {
+        font-size: 16px;
+    }
  }
  @media all and (min-width: 1024px) and (max-width: 1280px) {
     #default-capy-svg {
-        margin-left: 250px;
-        width: 650px;
+        margin-left: 50px;
+        width: 450px;
         margin-top: 50px;
     }
     .container {
@@ -39,13 +61,30 @@
         background-size: auto;
 
     }
+    .hero-1 {
+        font-size: 40px;
+    }
+    .hero-2 {
+        font-size: 90px;
+        bottom: 50px;
+        position: relative;
+    }
+    .container {
+        margin-top: 0;
+    }
+    .quiz-btn {
+        width: 244.028px;
+        height: 69px;
+        margin-top: 15px;
+        font-size: 20px;
+    }
 }
 
  @media all and (min-width: 768px) and (max-width: 1024px) {
     #default-capy-svg {
-        margin-left: 0;
-        width: 600px;
-        margin-top: 120px;
+        margin-left: 0px;
+        width: 450px;
+        margin-top: 50px;
     }
     ul {
         width: 64%;
@@ -57,10 +96,21 @@
         background-size: auto;
     }
     .hero-1 {
-        font-size: 54px;
+        font-size: 40px;
     }
     .hero-2 {
-        font-size: 100px;
+        font-size: 90px;
+        bottom: 50px;
+        position: relative;
+    }
+    .container {
+        margin-top: 0;
+    }
+    .quiz-btn {
+        width: 244.028px;
+        height: 69px;
+        margin-top: 15px;
+        font-size: 20px;
     }
   }
  

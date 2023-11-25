@@ -136,7 +136,7 @@ h2 {
     color: var(--pr-colour-1);
 }
 section {
-    height: 100vh;
+    height: 100dvh;
 }
 
 header {
@@ -174,8 +174,8 @@ ul {
 
 #image-container {
     background-image: url(../img/unsplash_QckxruozjRg.png);
-    /* not vh because ... */
-    height: 100vh;
+    /* not vh because dvh is the true viewport height after whichever device's UI than might be covering */
+    height: 100dvh;
     background-size: cover;
     background-repeat: no-repeat;
     /* the line below prevents the capybara svg from overflowing into the section below */
@@ -276,7 +276,7 @@ ul {
     
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 100dvh;
     /* this is controlled with javascript */
     background-position-y: -200px;
 }
@@ -313,7 +313,7 @@ h3 a {
     padding: 20px 20px;
     display: flex;
     padding: 0 var(--default-padding);
-    height: 100vh;
+    height: 100dvh;
 }
 
 /* ========================= STYLES THAT CONTROL QUIZ SECTION ========================= */
