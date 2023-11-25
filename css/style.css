@@ -49,7 +49,7 @@ h2 {
     font-size: 70px;
     font-style: normal;
     font-weight: 900; 
-    line-height: 70px; 
+    line-height: 60px; 
 }
 
 .text {
@@ -297,13 +297,13 @@ ul {
 }
 h3 {
     font-family: Poppins;
-    font-size: 36px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
 }
 h3 a {
-    font-size: 36px;
+    font-size: 25px;
     color: var(--pr-colour-35);
     text-decoration: underline;
     text-transform: none;

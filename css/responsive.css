@@ -15,7 +15,7 @@
     --padding-laptop: 70px;
     --padding-ipad-landscape: 50px;
     --padding-mobile: 50px;
-    --padding-tiny-mobile: 50px;
+    --padding-tiny-mobile: 10px;
  }
  /* large laptop */
  @media all and (min-width: 1280px) and (max-width: 1680px) {
@@ -53,10 +53,26 @@
     .text {
         padding-top: 50px;
     }
+    .text p {
+        margin-top: 100px;
+    }
+    #quiz h2, #contact h2 {
+        text-align: center;
+        padding-top: 50px;
+        font-size: 50px;
+    }
     #default-capy2-svg {
         margin-top: -120px;
         margin-left: 20px;
         transform: scale(0.7);
+    }
+    #default-capy3-svg {
+        transform: scale(0.7);
+        margin-top: -140px;
+        width: 620px;
+        right: 160px;
+        margin-right: -100px;
+        position: relative;
     }
  }
  @media all and (min-width: 1024px) and (max-width: 1280px) {
@@ -98,10 +114,26 @@
     .text {
         padding-top: 50px;
     }
+    .text p {
+        margin-top: 100px;
+    }
+    #quiz h2, #contact h2 {
+        text-align: center;
+        padding-top: 40px;
+        font-size: 45px;
+    }
     #default-capy2-svg {
         margin-top: -120px;
         margin-left: -40px;
         transform: scale(0.7);
+    }
+    #default-capy3-svg {
+        transform: scale(0.7);
+        margin-top: -140px;
+        width: 620px;
+        right: 160px;
+        margin-right: -200px;
+        position: relative;
     }
 }
 
@@ -146,10 +178,26 @@
     .text {
         padding-top: 50px;
     }
+    .text p {
+        margin-top: 100px;
+    }
+    #quiz h2, #contact h2 {
+        text-align: center;
+        padding-top: 40px;
+        font-size: 45px;
+    }
     #default-capy2-svg {
         margin-top: -120px;
         margin-left: -20px;
         transform: scale(0.7);
+    }
+    #default-capy3-svg {
+        transform: scale(0.7);
+        margin-top: -140px;
+        width: 620px;
+        right: 160px;
+        margin-right: -200px;
+        position: relative;
     }
   }
  
@@ -165,6 +213,7 @@
     }
     h2 {
         font-size: 50px;
+        line-height: 50px;
     }
     .container, .why-capy-container {
         padding: 0 var(--padding-mobile);
@@ -195,6 +244,9 @@
     #default-capy2-svg {
         display: none;
     }
+    #default-capy3-svg {
+        display: none;
+    }
   }
  
  @media all and (max-width: 480px) {
@@ -209,6 +261,7 @@
     }
     h2 {
         font-size: 50px;
+        line-height: 50px;
     }
     .container, .why-capy-container {
         padding: 0 var(--padding-tiny-mobile);
@@ -237,6 +290,15 @@
     }
     #default-capy2-svg {
         display: none;
+    }
+    #default-capy3-svg {
+        display: none;
+    }
+    header {
+        height: 80px;
+    }
+    .header-padding {
+        padding: 5px 10px;
     }
   }
  
