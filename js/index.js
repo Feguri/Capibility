@@ -22,5 +22,8 @@ async function fetchFavourites(url){
   fetchFavourites(url);
 
 function displayData(data){
-  console.log(data);
+  // const links = data[]
+  const title = data[0].title.rendered;
+  document.getElementById('title').innerHTML = title;
+  console.log(title);
 }
