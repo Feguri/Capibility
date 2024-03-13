@@ -29,11 +29,16 @@ function separateHTMLElements(htmlString) {
   return elements;
 }
 
+const title = document.getElementById('title');
+const intro = document.getElementById('intro');
 function displayData(data){
   // const links = data[]
   const contentElements = data[0].content.rendered;
   const contentElementsArray = separateHTMLElements(contentElements);
-  const title = data[0].title.rendered;
-  document.getElementById('title').innerHTML = title;
+
+  const introSentence = contentElementsArray[1];
+  const titleSentence = data[0].title.rendered;
+  title.innerHTML = titleSentence;
+  intro.innerHTML = introSentence;
   console.log(title, contentElementsArray, contentElements);
 }
