@@ -13,7 +13,7 @@
     --sd-colour-3: #E8530A;
     --sd-colour-4: #E4E3FF;
     --sd-colour-4: #B03535;
-    --header-height: 60px;
+    --header-height: 90px;
     --default-padding: 300px;
 }
 html {
@@ -65,7 +65,7 @@ h2 {
 .hero-2 {
     font-size: 140px;
     bottom: 60px;
-    position: relative;
+    line-height: 90px;
 }
 
 .hamburguer {
@@ -121,29 +121,32 @@ h2 {
     margin-top: 5%;
     justify-content: space-between;
     padding: 0 var(--default-padding);
+    width: 39%;
+    height: 70dvh;
 }
 
 .logo {
-    width: 229px;
-    height: 48px;
+    width: 280px;
+    height: 150%;
     flex-shrink: 0; 
 }
 
-.hero-text {
-    width: 460px;
-    letter-spacing: 2px;
-    word-spacing: 2px;
-    color: var(--pr-colour-1);
+.hero-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
-section {
-    height: 100dvh;
+.hero-text {
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
 }
 
 header {
     height: var(--header-height);
-}
-.header-padding {
-    padding: 10px 20px;
 }
 
 p {
@@ -152,10 +155,14 @@ p {
     font-size: 18px;
     letter-spacing: normal;
     position: relative;
-    bottom: 40px;
     color: var(--pr-colour-1);
 }
-
+#intro {
+    margin-top: 20px;
+}
+.sign-up {
+    font-size: 19px;
+}
 .nav-flex, ul {
     display: flex;
     height: var(--header-height);
@@ -217,7 +224,8 @@ ul {
 #default-capy-svg {
     background-image: url(../img/capy.svg);
     background-repeat: no-repeat;
-    margin-left: 200px;
+        margin-top: -487px;
+        margin-left: 969px;
     width: 770px;
     height: 770px;
     flex-shrink: 0; 
