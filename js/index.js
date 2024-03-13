@@ -16,14 +16,24 @@ async function fetchFavourites(url){
     const repsonse = await fetch(url);
     const data = await repsonse.json();
     displayData(data);
-  }
+}
 
-  //call function to fetch data
-  fetchFavourites(url);
+//call function to fetch data
+fetchFavourites(url);
+
+function separateHTMLElements(htmlString) {
+  const doc = new DOMParser().parseFromString(htmlString, 'text/html');
+  const elements = Array.from(doc.body.childNodes)
+      .map(node => node.outerHTML)
+      .filter(html => html !== undefined);
+  return elements;
+}
 
 function displayData(data){
   // const links = data[]
+  const contentElements = data[0].content.rendered;
+  const contentElementsArray = separateHTMLElements(contentElements);
   const title = data[0].title.rendered;
   document.getElementById('title').innerHTML = title;
-  console.log(title);
+  console.log(title, contentElementsArray, contentElements);
 }
