@@ -251,6 +251,7 @@
     }
     .hamburguer {
         display: block;
+        position: relative;
     }
     li {
         display: none;
@@ -320,6 +321,7 @@
     }
     .hamburguer {
         display: block;
+        position: relative;
     }
     li {
         display: none;
