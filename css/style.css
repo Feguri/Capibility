@@ -124,6 +124,41 @@ h2 {
     height: 70dvh;
 }
 
+.mobile-header {
+    animation-fill-mode: forwards;
+    transition: 1s dvh ease-in;
+    height: 0dvh;
+    background-color: #062F6C;
+    position: absolute;
+    width: 100%;
+}
+
+.roll-down {
+    animation-name: roll-down;
+    animation-duration: 0.25s;
+}
+.roll-up {
+    animation-name: roll-up;
+    animation-duration: 0.25s;
+}
+@keyframes roll-down {
+    from {
+        height: 0dvh;
+    }
+    to {
+        height: 100dvh;
+    }
+}
+@keyframes roll-up {
+    from {
+        height: 100dvh;
+    }
+    to {
+        height: 0dvh;
+    }
+}
+
+
 .logo {
     height: 150px;
     flex-shrink: 0; 

@@ -253,7 +253,7 @@
         display: block;
         position: relative;
     }
-    li {
+    .desktop-ul {
         display: none;
     }
     ul {
@@ -323,7 +323,7 @@
         display: block;
         position: relative;
     }
-    li {
+    .desktop-ul {
         display: none;
     }
     ul {
