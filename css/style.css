@@ -51,6 +51,9 @@ h2 {
     font-weight: 900; 
     line-height: 60px; 
 }
+section {
+    height: 100vh;
+}
 
 .text {
     display: flex;
@@ -70,6 +73,11 @@ h2 {
     font-size: 140px;
     bottom: 60px;
     line-height: 90px;
+}
+.hero-3 {
+    font-size: 140px;
+    bottom: 60px;
+    line-height: 120px;
 }
 
 .hamburguer {
@@ -232,7 +240,14 @@ ul {
     width: 130%;
     justify-content: space-between;
 }
-
+#image-container-graduate {
+    background-image: url(../img/graduate.png);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* the line below prevents the capybara svg from overflowing into the section below */
+    clip-path:inset(0); 
+}
 #image-container {
     background-image: url(../img/unsplash_QckxruozjRg.png);
     height: 100vh;
@@ -526,11 +541,20 @@ textarea {
 .send-email-btn:hover {
     cursor: pointer;
 }
-#pattern2, pattern3 {
+#pattern2, #pattern3, #pattern4, #pattern5, #pattern6, #pattern7 {
     background-image: url(../img/pattern2.png);
 }
 
-
+.vector-btn {
+    background-image: url(../img/Vector.svg);
+    width: 45px;
+    height: 45px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.vector-btn:hover {
+    cursor: pointer;
+}
 #our-partners {
     background-color: var(--pr-colour-1);
     height: 50vh;
@@ -542,4 +566,17 @@ textarea {
 footer {
     background-color: var(--pr-colour-5);
     height: 100vh;
+}
+
+#transversal {
+    background-color: var(--pr-colour-5);
+}
+#important {
+    background-color: var(--pr-colour-2);
+}
+#expectations {
+    background-color: var(--pr-colour-4);
+}
+#next-steps {
+    background-color: var(--pr-colour-35);
 }
