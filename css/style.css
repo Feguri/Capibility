@@ -142,6 +142,26 @@ section {
     height: 70vh;
 }
 
+.accordion {
+    background-color: white;
+    color: black;
+    width: 60%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 12px;
+}
+.accordion p {
+    color: black;
+}
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+.head-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
 .mobile-header {
     animation-fill-mode: forwards;
     transition: 1s vh ease-in;
@@ -579,4 +599,5 @@ footer {
 }
 #next-steps {
     background-color: var(--pr-colour-35);
+    height: 5000px;
 }
