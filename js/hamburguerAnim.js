@@ -3,6 +3,9 @@ const hamburguer = document.getElementById('ham');
 
 const introText = document.getElementById('intro');
 const signUpText = document.getElementById('sign-up');
+const mobileNav = document.getElementById('links-mobile');
+mobileNav.style.display = 'none';
+
 
 let rolledDown = false;
 
@@ -19,6 +22,7 @@ function changeState() {
 
         introText.style.display = 'block';
         signUpText.style.display = 'block';
+        mobileNav.style.display = 'none';
         rolledDown = false;
     } else {
         hamburguer.src = 'img/x.png';
@@ -31,5 +35,6 @@ function changeState() {
         header.classList.add('roll-down');
         introText.style.display = 'none';
         signUpText.style.display = 'none';
+        mobileNav.style.display = 'block';
     }
 }

@@ -7,8 +7,6 @@
     <script src="js/index.js" defer></script>
     <script src="js/hamburguerAnim.js" defer></script>
     <script src="js/patternAnim.js" defer></script>
-    <!-- smtpjs to help with the contact form -->
-    <script src="https://smtpjs.com/v3/smtp.js" defer></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -23,22 +21,28 @@
                 
                 <!--------- Header and Nav part ---------->
                     <header id="mobile-header" class="mobile-header">
-                        <ul>
+                      <div id="links-mobile">
+                        <ul id="mobile-nav">
                           <li><a class="underline-hover-effect" href="#video">our mission</a></li>
                           <li><a class="underline-hover-effect" href="#mentor">get involved</a></li>
                           <li><a class="underline-hover-effect" href="#contact">contact us</a></li>
                           <li><button type="button" class="lan-btn">FR</button></li>
                         </ul>
+                      </div>
+                        
                     </header>
                     <header class="header-padding">
                         <nav class="nav-flex">
                             <img src="img/Logo.png" class="logo" alt="Capibility Logo">
-                            <ul class="desktop-ul">
+                            <div id="links-desktop">
+                              <ul class="desktop-ul">
                                 <li><a class="underline-hover-effect" href="#video">our mission</a></li>
                                 <li><a class="underline-hover-effect" href="#mentor">get involved</a></li>
                                 <li><a class="underline-hover-effect" href="#contact">contact us</a></li>
                                 <li><button type="button" class="lan-btn">FR</button></li>
                             </ul>
+                            </div>
+                           
                             <img id="ham" src="img/hambaggar.png" class="hamburguer" alt="">
                         </nav>
                     </header>
@@ -73,68 +77,47 @@
           <!-- this section has a grainy texture and is wrapped in a pattern -->
             <div id="pattern" class="pattern">
               <div class="why-capy-container">
+                <div class="svg" id="capy-svg"></div>
                 <div class="text">
-                  <h2>Why Capybara?</h2>
-                  <p>Symbol of Relaxation and Calmness: Capybaras are often associated with relaxation and calmness. They are known for their gentle and easygoing nature. We want convey the message that learning and self-improvement can be a stress-free and enjoyable experience, just like  being around capybaras.</p> 
+                  
+                  <h2 id="section-2-title">Why Capybara?</h2>
+                  <p id="section-2-text">Symbol of Relaxation and Calmness: Capybaras are often associated with relaxation and calmness. They are known for their gentle and easygoing nature. We want convey the message that learning and self-improvement can be a stress-free and enjoyable experience, just like  being around capybaras.</p> 
                 </div>
-                <div class="svg" id="default-capy2-svg"></div>
+                
               </div>
               
 
             </div>
         </section>
-        <section id="mentor" class="page">
-          <div class="why-capy-container">
-            <div class="svg" id="default-capy3-svg"></div>
-            <div class="text">
-              <h2>Become a Mentor</h2>
-              <p>Mentor other students with life's essential skills like <span class="blue">time management</span> , <span class="blue">networking</span> , <span class="blue">managing your workload</span> , and <span class="blue">building effective study habits</span>  , instilling the knowledge and confidence necessary for a balanced and successful life.</p> 
-              <h3>Are you a teacher? <a href="#contact">Get involved</a></h3>
+        <section id="contact" class="page texture">
+          <div class="pattern" id="pattern2">
+            <div class="section-3-wrap">
+              <h2 id="section-3-title">Unlock Your true potential!</h2>
+            <p id="section-3" style="color: black;">If you would like to advance your full potential and get certified real-world experience, join our community today 
+              and take advantage of our free mentoring services!</p>
+            <a href="https://vaniercollege.omnivox.ca/" target="_blank"><button type="button" class="quiz-btn" id="sign-up2">Sign Up</button></a>
             </div>
             
           </div>
+           
         </section>
         <section id="quiz" class="page texture">
-            <h2>Quiz: <br> What is your capybara?</h2>
-            <div class="center-btn">
-              <button class="start-btn" type="button">START</button>
-            </div>
-            <div class="different-capys-grid">
-              <img src="img/pngCapy.png" alt="">
-              <img src="img/pngCapy.png" alt="">
-              <img src="img/pngCapy.png" alt="">
-              <img src="img/pngCapy.png" alt="">
+            <div id="pattern3">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/QUqCWkPlLLc?si=Vq-Gapyqs6DHzhyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <p>
+                With one-on-one personalized guidance, 
+                we will work on essential life skills, including:
+
+                Time Management
+                Networking
+                Managing your Workload
+                Building Effective Study Habits
+              </p>
+              <a href="https://vaniercollege.omnivox.ca/" target="_blank"><button type="button" class="quiz-btn" id="sign-up3">Sign Up</button></a>
             </div>
             
         </section>
-        <section id="contact" class="page texture">
-            <div id="pattern2" class="pattern">
-              <h2>Contact Us</h2>
-              <div class="form-container">
-                <form onsubmit="sendEmail(); reset(); return false;" action="" method="get" class="form">
-                  <div class="form-block">
-                    <label for="name">Enter your name: </label>
-                    <input type="text" name="name" id="name" required />
-                  </div>
-                  <div class="form-block">
-                    <label for="email">Enter your email: </label>
-                    <input type="email" name="email" id="email" required />
-                  </div>
-                  <div class="form-block">
-                    <label for="subject">Subject </label>
-                    <input type="text" name="subject" id="subject" required />
-                  </div>
-                  <div class="form-block">
-                    <label for="message">Message </label>
-                    <textarea name="message" id="message" cols="30" rows="5"></textarea>
-                  </div>
-                  <div class="form-block">
-                    <input class="send-email-btn" type="submit" value="SEND EMAIL" />
-                  </div>
-                </form>
-              </div>
-            </div>
-        </section>
+
         <section id="our-partners" class="page">
           <div class="picture">
               <img src="img/building21.png" alt="We are parterned with McGill University's Building 21">

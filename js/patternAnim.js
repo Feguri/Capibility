@@ -2,6 +2,8 @@
 
 const pattern1 = document.getElementById('pattern');
 const pattern2 = document.getElementById('pattern2');
+const pattern3 = document.getElementById('pattern3');
+
 let scrollProgress = 0;
 let previousScrollY = window.scrollY;
 let isScrolling;
@@ -37,5 +39,6 @@ window.addEventListener('scroll', function () {
         let product = -seed - scrollProgress;
         pattern1.style.backgroundPositionY = `${product}px`;
         pattern2.style.backgroundPositionY = `${product}px`;
+        pattern3.style.backgroundPositionY = `${product}px`;
     }, 5); // Adjust the delay (in milliseconds) to control the rate of updates
 });

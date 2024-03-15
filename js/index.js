@@ -39,19 +39,38 @@ function addAttribute(attributeType, attributeValue, htmlElement) {
   return htmlElement;
 }
 
+function extractText(htmlString) {
+  const tempElement = document.createElement('div');
+  tempElement.innerHTML = htmlString.trim();
+  return tempElement.textContent || tempElement.innerText || '';
+}
+
 const title = document.getElementById('title');
 const intro = document.getElementById('intro');
-const signUp = document.getElementById('sign-up')
+const signUp = document.getElementById('sign-up');
+const linksDesktop = document.getElementById('links-desktop');
+const linksMobile = document.getElementById('links-mobile');
+const section2Title = document.getElementById('section-2-title');
+const section2Text = document.getElementById('section-2-text')
 function displayData(data){
   // const links = data[]
   const contentElements = data[0].content.rendered;
   const contentElementsArray = separateHTMLElements(contentElements);
 
+  const linksDesktopSentence = addAttribute('class', 'desktop-ul', contentElementsArray[0]);
+  const linksMobileSentence = addAttribute('id', 'mobile-nav', contentElementsArray[0]);
+  console.log(linksDesktopSentence);
   const introSentence = contentElementsArray[1];
-  const signUpSentence = addAttribute('class', 'sign-up', contentElementsArray[2]) ;
+  const signUpSentence = addAttribute('class', 'sign-up', contentElementsArray[2]);
   const titleSentence = data[0].title.rendered;
+
+  const section2TitleSentence = extractText(contentElementsArray[3]);
+  const section2TextSentence = extractText(contentElementsArray[4]);
   title.innerHTML = titleSentence;
   intro.innerHTML = introSentence;
   signUp.innerHTML = signUpSentence;
-  console.log(title, contentElementsArray, contentElements);
+  linksDesktop.innerHTML = linksDesktopSentence;
+  linksMobile.innerHTML = linksMobileSentence;
+  section2Title.innerHTML = section2TitleSentence;
+  section2Text.innerHTML = section2TextSentence;
 }

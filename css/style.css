@@ -1,7 +1,7 @@
 /* ========================= PR STANDS FOR PRIMARY AND SD FOR SECONDARY ========================= */
 :root {
     --pr-colour-1: #FFFFFF;
-    --pr-colour-2: #e99d11;
+    --pr-colour-2: #ffb222;
     --pr-colour-3: #0052D4;
     --pr-colour-35: #4364F7;
     --pr-colour-4: #F16622;
@@ -53,7 +53,11 @@ h2 {
 }
 
 .text {
-    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 170px;
+    margin-left: 60px;
 }
 .text p {
     margin-top: 150px;
@@ -73,10 +77,16 @@ h2 {
     width: 30px;
 }
 
+#sign-up2 {
+    box-shadow: 0px 0px 83px 9px var(--pr-colour-4);
+}
+#sign-up2:hover {
+    box-shadow: 0px 0px 120px 20px var(--pr-colour-4);
+}
 .quiz-btn {
     /* Layout */
     width: 344.028px;
-    height: 79px;
+    height: 60px;
     flex-shrink: 0;
     border-radius: 93px;
     background: var(--pr-colour-4);
@@ -121,13 +131,13 @@ h2 {
     justify-content: space-between;
     padding: 0 var(--default-padding);
     width: 39%;
-    height: 70dvh;
+    height: 70vh;
 }
 
 .mobile-header {
     animation-fill-mode: forwards;
-    transition: 1s dvh ease-in;
-    height: 0dvh;
+    transition: 1s vh ease-in;
+    height: 0vh;
     background-color: #062F6C;
     position: absolute;
     width: 100%;
@@ -143,18 +153,18 @@ h2 {
 }
 @keyframes roll-down {
     from {
-        height: 0dvh;
+        height: 0vh;
     }
     to {
-        height: 100dvh;
+        height: 100vh;
     }
 }
 @keyframes roll-up {
     from {
-        height: 100dvh;
+        height: 100vh;
     }
     to {
-        height: 0dvh;
+        height: 0vh;
     }
 }
 
@@ -202,19 +212,30 @@ p {
     align-items: center;
 }
 
+#mobile-nav {
+    margin-top: 30%;
+
+    display: block;
+    height: 100vh;
+    width: 100%;
+    padding: 30px 20px 20px 0px;
+
+    text-align: center;
+    line-height: 70px;
+}
+
 .nav-flex{
-    justify-content: space-between; 
+    justify-content: flex-start; 
 }
 
 ul {
-    width: 50%;
+    width: 130%;
     justify-content: space-between;
 }
 
 #image-container {
     background-image: url(../img/unsplash_QckxruozjRg.png);
-    /* not vh because dvh is the true viewport height after whichever device's UI than might be covering */
-    height: 100dvh;
+    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     /* the line below prevents the capybara svg from overflowing into the section below */
@@ -233,6 +254,25 @@ ul {
 }
 .lan-btn:hover {
     cursor: pointer;
+}
+#links-desktop li {
+    color: white;
+    display: inline-block;
+    padding-bottom: 0.5rem; /* Defines space between text and underline */
+    position: relative;
+}
+#links-desktop li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--pr-colour-1);
+    transition: width 0.25s ease-out;
+}
+#links-desktop li:hover::before {
+    width: 100%;
 }
 
 .underline-hover-effect {
@@ -258,11 +298,23 @@ ul {
     background-image: url(../img/capy.svg);
     background-repeat: no-repeat;
         margin-top: -487px;
-        margin-left: 969px;
+        margin-left: 1069px;
     width: 770px;
     height: 770px;
     flex-shrink: 0; 
     transform: rotate(10deg) scale(1.1);
+}
+#capy-svg {
+    background-image: url(../img/capy.svg);
+    background-repeat: no-repeat;
+    width: 620px;
+    height: 630px;
+    flex-shrink: 0;
+    transform: rotate(10deg) scale(1.1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    margin-top: 323px;
+    margin-left: -200px;
 }
 #default-capy2-svg {
     margin-top: 100px;
@@ -289,6 +341,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 .texture {
     background: url(../img/grainy-texture.png), rgba(228, 227, 255,1) 0% 0% / 44.40000057220459px 44.40000057220459px repeat;
@@ -316,7 +369,7 @@ ul {
     
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100dvh;
+    height: 100vh;
     /* this is controlled with javascript */
     background-position-y: -200px;
 }
@@ -353,13 +406,14 @@ h3 a {
     padding: 20px 20px;
     display: flex;
     padding: 0 var(--default-padding);
-    height: 100dvh;
+    height: 100vh;
 }
 
 /* ========================= STYLES THAT CONTROL QUIZ SECTION ========================= */
 #quiz{
     background-color: var(--pr-colour-4);
     clip-path: inset(0);
+    height: 100vh;
 }
 #quiz h2, #contact h2 {
     text-align: center;
@@ -403,10 +457,21 @@ h3 a {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
+.section-3-wrap {
+    width: 40%;
+    height: 100%;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    justify-content: center;
+    align-items: center;
+}
 
 /* ========================= STYLES THAT CONTROL CONTACT SECTION ========================= */
 #contact {
     background-color: var(--pr-colour-2);
+    height: 100vh;
 }
 form {
     margin-top: 30px;
@@ -461,13 +526,14 @@ textarea {
 .send-email-btn:hover {
     cursor: pointer;
 }
-#pattern2 {
+#pattern2, pattern3 {
     background-image: url(../img/pattern2.png);
 }
 
+
 #our-partners {
     background-color: var(--pr-colour-1);
-    height: 50dvh;
+    height: 50vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -475,5 +541,5 @@ textarea {
 
 footer {
     background-color: var(--pr-colour-5);
-    height: 100dvh;
+    height: 100vh;
 }

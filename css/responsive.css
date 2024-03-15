@@ -14,7 +14,7 @@
     --padding-desktop: 150px;
     --padding-laptop: 70px;
     --padding-ipad-landscape: 50px;
-    --padding-mobile: 50px;
+    --padding-mobile: 20px;
     --padding-tiny-mobile: 10px;
  }
  /* Desktop */
@@ -28,10 +28,13 @@
  }
  /* large laptop */
  @media all and (min-width: 1280px) and (max-width: 1680px) {
+    .section-3-wrap {
+        width: 60%;
+    }
     #default-capy-svg {
         margin-top: -420px;
         margin-left: 808px;
-        height: 85dvh;
+        height: 85vh;
     }
     .container, .why-capy-container, .nav-flex {
         padding: 0 var(--padding-desktop);
@@ -83,9 +86,12 @@
     }
  }
  @media all and (min-width: 1024px) and (max-width: 1280px) {
+    .section-3-wrap {
+        width: 80%;
+    }
     #default-capy-svg {
         margin-left: 600px;
-        height: 109dvh;
+        height: 109vh;
         width: 687px;
         margin-top: -440px;
     }
@@ -146,6 +152,9 @@
 }
 
  @media all and (min-width: 768px) and (max-width: 1024px) {
+    .section-3-wrap {
+        width: 90%;
+    }
     #default-capy-svg {
         margin-top: -87px;
         margin-left: 469px;
@@ -154,6 +163,13 @@
     }
     ul {
         width: 64%;
+    }
+    .why-capy-container {
+        flex-direction: column-reverse;
+    }
+    #capy-svg {
+        margin-top: -227px;
+        height: 519px;
     }
     .container, .why-capy-container, .nav-flex {
         padding: 0 var(--padding-ipad-landscape);
@@ -171,6 +187,9 @@
     .container {
         margin-top: 0;
     }
+    .desktop-ul {
+        display: none;
+    }
     .quiz-btn {
         width: 244.028px;
         height: 69px;
@@ -185,15 +204,17 @@
     }
     .text {
         padding-top: 50px;
+        margin-left: 0;
     }
     .text p {
         margin-top: 100px;
+        
     }
     #quiz h2, #contact h2 {
         text-align: center;
         padding-top: 40px;
-        font-size: 45px;
-        line-height: 45px;
+        font-size: 66px;
+        line-height: 69px;
     }
     #default-capy2-svg {
         margin-top: -120px;
@@ -214,11 +235,18 @@
     }
     #our-partners {
         flex-direction: column;
-        height: 100dvh;
+        height: 100vh;
     }
+    .hamburguer {
+        display: block;
+        position: relative;
+    }w
   }
  
  @media all and (min-width: 480px) and (max-width: 768px) {
+    .section-3-wrap {
+        width: 95%;
+    }
     #default-capy-svg {
         display: none;
     }
@@ -231,6 +259,13 @@
     h2 {
         font-size: 50px;
         line-height: 50px;
+    }
+    .why-capy-container {
+        flex-direction: column-reverse;
+    }
+    #capy-svg {
+        margin-top: -227px;
+        height: 519px;
     }
     .container, .why-capy-container, .nav-flex {
         padding: 0 var(--padding-mobile);
@@ -247,7 +282,8 @@
         font-size: 54px;
     }
     .hero-2 {
-        font-size: 100px;
+        font-size: 90px;
+        line-height: 76px;
     }
     .hamburguer {
         display: block;
@@ -261,12 +297,16 @@
     }
     .text {
         padding-top: 50px;
+        margin-left: 0;
+    }
+    .text p {
+        margin-top: 40px;
     }
     #quiz h2, #contact h2 {
         text-align: center;
         padding-top: 40px;
-        font-size: 35px;
-        line-height: 35px;
+        font-size: 66px;
+        line-height: 69px;
     }
     #default-capy2-svg {
         display: none;
@@ -285,11 +325,14 @@
     }
     #our-partners {
         flex-direction: column;
-        height: 100dvh;
+        height: 100vh;
     }
   }
  
  @media all and (max-width: 480px) {
+    .section-3-wrap {
+        width: 95%;
+    }
     #default-capy-svg {
         display: none;
     }
@@ -302,6 +345,15 @@
     h2 {
         font-size: 50px;
         line-height: 50px;
+    }
+    .why-capy-container {
+        flex-direction: column-reverse;
+    }
+    #capy-svg {
+        margin-top: -314px;
+        height: 369px;
+        /* display: none; */
+        margin-left: -379px;
     }
     .container, .why-capy-container, .nav-flex {
         padding: 0 var(--padding-tiny-mobile);
@@ -317,7 +369,8 @@
         font-size: 54px;
     }
     .hero-2 {
-        font-size: 100px;
+        font-size: 80px;
+        line-height: 76px;
     }
     .hamburguer {
         display: block;
@@ -331,12 +384,17 @@
     }
     .text {
         padding-top: 50px;
+        margin-left: 0;
+        margin-bottom: 360px;
+    }
+    .text p {
+        margin-top: 40px;
     }
     #quiz h2, #contact h2 {
         text-align: center;
         padding-top: 40px;
-        font-size: 30px;
-        line-height: 30px;
+        font-size: 46px;
+        line-height: 39px;
     }
     #default-capy2-svg {
         display: none;
@@ -361,7 +419,7 @@
     }
     #our-partners {
         flex-direction: column;
-        height: 100dvh;
+        height: 100vh;
     }
   }
  
