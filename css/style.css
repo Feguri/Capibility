@@ -384,7 +384,7 @@ ul {
 }
 .texture {
     background: url(../img/grainy-texture.png), rgba(228, 227, 255,1) 0% 0% / 44.40000057220459px 44.40000057220459px repeat;
-    mix-blend-mode: soft-light;
+    /* mix-blend-mode: soft-light; */
     background-repeat: no-repeat;
     background-size: cover;
 }
