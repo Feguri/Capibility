@@ -145,21 +145,25 @@ section {
 .accordion {
     background-color: white;
     color: black;
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
-    padding: 30px;
+    padding: 18px;
     border-radius: 12px;
+    transition: 0.25s all;
+    margin-top: 20px;
 }
 .accordion p {
     color: black;
+    padding-top: 20px;
 }
 h4 {
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
 }
 .head-wrap {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .mobile-header {
@@ -213,7 +217,7 @@ h4 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 80%;
+    height: 70%;
 }
 
 header {
@@ -566,9 +570,9 @@ textarea {
 }
 
 .vector-btn {
-    background-image: url(../img/Vector.svg);
-    width: 45px;
-    height: 45px;
+    width: 30px;
+    height: 30px;
+    transition: 0.25s all;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -596,6 +600,7 @@ footer {
 }
 #expectations {
     background-color: var(--pr-colour-4);
+    height: 150vh;
 }
 #next-steps {
     background-color: var(--pr-colour-35);

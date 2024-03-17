@@ -53,16 +53,17 @@ const linksMobile = document.getElementById('links-mobile');
 const section2Title = document.getElementById('section-2-title');
 const section2Text = document.getElementById('section-2-text')
 function displayData(data){
+  
   // const links = data[]
-  const contentElements = data[0].content.rendered;
+  const contentElements = data[1].content.rendered;
   const contentElementsArray = separateHTMLElements(contentElements);
-
+  console.log(data[1].title);
   const linksDesktopSentence = addAttribute('class', 'desktop-ul', contentElementsArray[0]);
   const linksMobileSentence = addAttribute('id', 'mobile-nav', contentElementsArray[0]);
   console.log(linksDesktopSentence);
   const introSentence = contentElementsArray[1];
   const signUpSentence = addAttribute('class', 'sign-up', contentElementsArray[2]);
-  const titleSentence = data[0].title.rendered;
+  const titleSentence = data[1].title.rendered;
 
   const section2TitleSentence = extractText(contentElementsArray[3]);
   const section2TextSentence = extractText(contentElementsArray[4]);
