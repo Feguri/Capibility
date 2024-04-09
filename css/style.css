@@ -589,8 +589,9 @@ textarea {
 
 footer {
     background-color: var(--pr-colour-5);
-    height: 100vh;
+    height: 425px;
 }
+
 
 #transversal {
     background-color: var(--pr-colour-5);
