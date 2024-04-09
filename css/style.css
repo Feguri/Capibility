@@ -591,6 +591,10 @@ footer {
     background-color: var(--pr-colour-5);
     height: 425px;
 }
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
 
 
 #transversal {
