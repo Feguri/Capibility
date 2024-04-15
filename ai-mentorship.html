@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capibility</title>
+    <script src="js/hamburguerAnim.js" defer></script>
+    <script src="js/patternAnim.js" defer></script>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+       <section id="landing-page" class="page">
+        <style>
+            #image-container {
+              background-image: url(img/ai-mentorship-bg.png);
+            }
+            .p-container {
+              background-color: rgba(255, 255, 255, 0.207);
+              border-radius: 22px;
+              padding: 50px 30px;
+              margin-top: 130px;
+              color: black;
+              margin: 130px auto;
+            }
+
+            @media (min-width: 768px) and (max-width: 4024px) {
+                #quiz h2, #contact h2 {
+                  padding-top: 40px;
+                  font-size: 70px;
+                  line-height: 69px;
+              }
+            }
+
+            @media only screen and (min-width: 768px) {
+              .p-container {
+                width: 40%;
+              }
+              h2 {
+                font-size: 70px;
+              }
+            }
+            h2 {
+              font-size: 70px;
+              text-align: center;
+            }
+            h3 {
+              color: white;
+              font-size: 36;
+              font-weight: 600;
+              width: 50%;
+            }
+            #why-capy h2, h3 {
+              margin: 0 auto;
+              padding-top: 50px;
+            }
+        </style>
+            <div id="image-container">
+                
+                <!--------- Header and Nav part ---------->
+                    <header id="mobile-header" class="mobile-header">
+                      <div id="links-mobile">
+                        <ul id="mobile-nav">
+                            <li><a  href="./index.html">Home</a></li>
+                            <li><a href="./peer-mentorship.html">Peer Mentorship</a></li>
+                            <li><a  href="./portrait.html">Portrait of a Graduate</a></li>
+                            <li><a  href="./badges.html">Badges</a></li>
+                        </ul>
+                      </div>
+                        
+                    </header>
+                    <header class="header-padding">
+                        <nav class="nav-flex">
+                            <img src="img/Logo.png" class="logo" alt="Capibility Logo">
+                            <div id="links-desktop">
+                              <ul class="desktop-ul">
+                                <li><a  href="./index.html">Home</a></li>
+                                <li><a  href="./peer-mentorship.html">Peer Mentorship</a></li>
+                                <li><a  href="./portrait.html">Portrait of a Graduate</a></li>
+                                <li><a  href="./badges.html">Badges</a></li>
+                            </ul>
+                            </div>
+                           
+                            <img id="ham" src="img/hambaggar.png" class="hamburguer" alt="">
+                        </nav>
+                    </header>
+                <!---------------------------------------->
+
+                <!--------- Hero ---------->
+                    <div class="container">
+                      <div class="hero-text-container">
+                         <div class="hero-text">
+                            <h1 class="hero-2" id="title">AI Mentorship</h1>
+                            <p>Try out our AI ChatBot in your quest to improve your skills. Use the ChatBot to help assess your level or to help with advice on what you can do to improve.</p>
+                            <a href="https://vaniercollege.omnivox.ca/" target="_blank"><button type="button" class="quiz-btn" id="sign-up">Learn More</button></a>
+                            
+                        </div>
+                      </div>
+                    </div>
+                <!------------------------->
+            </div>
+
+
+        </section>
+        <section id="contact" class="page texture">
+            <style>
+                #pattern3 {
+                    height: 100%;
+                }
+            </style>
+            <div id="pattern3">
+              <h2>Why AI for soft skills?</h2>
+              <div class="transversal-competencies-p-container">
+                <p class="p-container">Our ChatGPT tool helps students determine their current level through socratic dialogue. Our AI also helps students can even help students come up with activities that can do to move up on the different grids. It personalizes the process to anything students are interested in - sports, theatre, video games, volunteering and many others.</p>
+              </div>
+            </div>
+            
+        </section>
+
+        <section id="quiz" class="page texture">
+            <div id="pattern" class="pattern">
+              <h2>Watch a quick video!</h2>
+            </div>
+        </section>
+        <section id="why-capy" class="page texture">
+          <div class="pattern" id="pattern2">
+            <h2>Try it out!</h2>
+            <h3>Get help determining your level in 
+              Interact and Participate Effectively with Others.
+            </h3>
+            <a href="https://vaniercollege.omnivox.ca/" target="_blank"><button type="button" class="quiz-btn" id="sign-up">Click Here</button></a>
+          </div>
+        </section>
+
+    </main>
+    
+    <style>
+      footer {
+        padding-top: 300px;
+        padding: 100px 100px;
+        height: 425px;
+      }
+      .footer-grid {
+        font-size: 14px;
+      }
+      @media all and (max-width: 480px) {
+        footer {
+          padding-top: 50px;
+        }
+        .col-3{
+          display: none;
+        }
+        .footer-grid {
+          grid-template-columns: 1fr;
+        }
+        .col {
+          text-align: center;
+        }
+        .col a {
+          padding-top: 20px;
+        }
+      }
+      .copyright {
+        display: grid;
+        color: white;
+        text-align: center;
+        margin-top: 320px;
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+    <footer id="footer" class="page">
+      <div class="footer-grid">
+        <div class="col col-1">
+          <a href="./portrait.html">Portrait of a Graduate</a>
+          <a href="">AI Mentorship</a>
+          <a href="">Peer Mentorship</a>
+          <a href="">Badge System</a>
+        </div>
+        <div class="col col-2">
+          <a href="">Our mission</a>
+          <a href="">Get involved</a>
+          <a href="">Give us Feedback</a>
+          <!-- Filler -->
+          <a href=""></a>
+        </div>
+        <div class="col col-3">
+          <p>Join us today to improve your skills or help mentor your peers as we work to equip the leaders of tomorrow with skills for life.</p>
+          <button type="button" class="quiz-btn">Sign Up</button>
+        </div>
+      </div>
+      
+
+      <span class="copyright">Copyright © Capibility 2024</span>
+    </footer>
+
+    </script>
+</body>
+</html>

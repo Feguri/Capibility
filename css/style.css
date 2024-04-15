@@ -26,15 +26,18 @@ html {
 #landing-page {
     background-color: var(--pr-colour-3);
 }
+header a {
+    text-transform: uppercase;
+}
 
 a {
     font-family: 'Inter', sans-serif;
-    text-transform: uppercase;
     color: var(--pr-colour-1);
     font-weight: 400;
     text-decoration: none;
     font-size: 16px;
 }
+
 h1 {
     color: #FFF;
     font-family: 'Poppins', sans-serif;
@@ -53,6 +56,14 @@ h2 {
 }
 section {
     height: 100vh;
+}
+
+.purple-button {
+    display: inline-flex;
+    padding: 3px 0px;
+    justify-content: center;
+    align-items: center;
+    background-color: #4364F7;
 }
 
 .text {
@@ -565,10 +576,13 @@ textarea {
 .send-email-btn:hover {
     cursor: pointer;
 }
-#pattern2, #pattern3, #pattern4, #pattern5, #pattern6, #pattern7 {
+#pattern2, #pattern3, #pattern4, #pattern5, #pattern6 {
     background-image: url(../img/pattern2.png);
 }
-
+#pattern7 {
+    background-image: url(../img/bg-pattern.png);
+    height: fit-content;
+}
 .vector-btn {
     width: 30px;
     height: 30px;
@@ -613,5 +627,4 @@ footer {
 }
 #next-steps {
     background-color: var(--pr-colour-35);
-    height: 5000px;
 }

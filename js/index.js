@@ -31,7 +31,6 @@ function addAttribute(attributeType, attributeValue, htmlElement) {
   if (match) {
       const tagName = match[1];
       const attributes = match[2];
-
       const updatedElement = `<${tagName} ${attributes.trim()} ${attributeType}="${attributeValue}">`;
       return htmlElement.replace(regex, updatedElement);
   }
