@@ -623,7 +623,6 @@ footer {
 }
 #expectations {
     background-color: var(--pr-colour-4);
-    height: 150vh;
 }
 #next-steps {
     background-color: var(--pr-colour-35);
