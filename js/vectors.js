@@ -13,6 +13,5 @@ for (let vectorBtn of vectorBtns){
             vectorBtn.style.transform = 'rotate(180deg)';
             text.style.display ='block';
         }
-
     })
 }

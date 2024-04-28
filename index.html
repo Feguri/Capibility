@@ -69,11 +69,10 @@
 
 
         </section>
-        <section id="video" class="page">
-          <!-- this section has a grainy texture -->
+        <!-- <section id="video" class="page">
 
             <iframe width="560" height="315" src="https://www.youtube.com/embed/QUqCWkPlLLc?si=Vq-Gapyqs6DHzhyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </section>
+        </section> -->
         <section id="why-capy" class="page texture">
           <!-- this section has a grainy texture and is wrapped in a pattern -->
             <div id="pattern" class="pattern">
@@ -104,19 +103,33 @@
         </section>
         <section id="quiz" class="page texture">
             <div id="pattern3">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/QUqCWkPlLLc?si=Vq-Gapyqs6DHzhyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              <p>
-                With one-on-one personalized guidance, 
-                we will work on essential life skills, including:
-
-                Time Management
-                Networking
-                Managing your Workload
-                Building Effective Study Habits
-              </p>
-              <a href="https://vaniercollege.omnivox.ca/" target="_blank"><button type="button" class="quiz-btn" id="sign-up3">Sign Up</button></a>
+              <style>
+                .video-section {
+                  display: flex;
+                  justify-content: center;
+                  flex-direction: column;
+                  align-items: center;
+                  height: 100vh;
+                  gap: 30px;
+                }
+                .smaller {
+                  width: 50%;
+                }
+              </style>
+              <div class="video-section">
+                <iframe width="860" height="515" src="https://www.youtube.com/embed/c0bxIuBY-bI?si=foQf-z0RyYUtZkNH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p class="smaller">
+                  With one-on-one personalized guidance, 
+                  we will work on essential life skills, including:
+  
+                  Time Management
+                  Networking
+                  Managing your Workload
+                  Building Effective Study Habits
+                </p>
+                <a href="https://vaniercollege.omnivox.ca/" target="_blank"><button type="button" class="quiz-btn" id="sign-up3">Sign Up</button></a>
+              </div>
             </div>
-            
         </section>
 
         <section id="our-partners" class="page">
