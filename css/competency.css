@@ -1,0 +1,103 @@
+#competency-hero {
+    display: grid;
+    padding: clamp(1.44rem, -0.875rem + 2.986vw, 2.986rem);
+    color: var(--pr-colour-1);
+    background-color: var(--pr-colour-3);
+    background-image: url(../img/competency-hero.png);
+    clip-path: inset(0);
+}
+
+#competency-hero h2 {
+    padding-top: clamp(1.728rem, -0.875rem + 8.333vw, 4.3rem);
+    font-weight: 900;
+    font-size: clamp(4.728rem, -0.875rem + 8.333vw, 4.3rem);
+    align-self: end;
+    line-height: 1;
+    max-width: 3rem;
+}
+
+#competency-hero article {
+    display: grid;
+    row-gap: 30px;
+}
+
+#testimonials {
+    background: url(../img/grainy-texture.png), var(--pr-colour-2) 0% 0% / 44.40000057220459px 44.40000057220459px repeat;
+    background-image: url(../img/pattern2.png);
+    min-height: 100vh;
+    color: var(--pr-colour-5);    
+    justify-content: center;
+    align-items: center;
+}
+
+#testimonials article {
+    background-color: #ffffff29;
+    border-radius: 2rem;
+    display: grid;
+    row-gap: 30px;
+}
+
+#competencies {
+    background: url(../img/grainy-texture.png), var(--pr-colour-3) 0% 0% / 44.40000057220459px 44.40000057220459px repeat;
+    background-image: url(../img/pattern2.png);
+    min-height: 100vh;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: none;
+}
+
+#competencies article {
+    background-color: #ffffff29;
+    border-radius: 2rem;
+    max-width: 60rem;
+    display: grid;
+    row-gap: 30px;
+}
+
+#competencies img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#competencies p a{
+    color: var(--pr-colour-2);
+}
+
+#competencies p a:hover {
+    color: var(--pr-colour-5);
+    transition: all 0.5s;
+}
+
+#video {
+    background: url(../img/grainy-texture.png), var(--pr-colour-4) 0% 0% / 44.40000057220459px 44.40000057220459px repeat;
+    background-image: url(../img/pattern2.png);
+    min-height: 100vh;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+}
+
+#video p {
+    padding: clamp(1.728rem, -0.875rem + 3.583vw, 2.986rem);
+    background-color: #ffffff29;
+    border-radius: 2rem;
+}
+
+#video h2{
+    text-align: center;
+}
+
+div.wp-block-button{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+a.wp-block-button__link.wp-element-button{
+    grid-column: 2/3;
+}
+section {
+    grid-template-rows: 1fr 7rem 1fr;
+}

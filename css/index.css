@@ -1,0 +1,92 @@
+#hero {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: clamp(1.44rem, -0.875rem + 2.986vw, 2.986rem);
+    color: var(--pr-colour-1);
+    background-color: var(--pr-colour-3);
+    background-image: url(../img/index-hero.png);
+    clip-path: inset(0);
+}
+
+#hero h2 {
+    padding-top: clamp(1.728rem, -0.875rem + 8.333vw, 4.3rem);
+    font-weight: 900;
+    font-size: clamp(5.728rem, -0.875rem + 8.333vw, 4.3rem);
+    align-self: end;
+    line-height: 1;
+}
+
+#what-are-skills4life{
+    background: url(../img/grainy-texture.png), var(--pr-colour-5) 0% 0% / 44.40000057220459px 44.40000057220459px repeat;
+    background-image: url(../img/pattern2.png);
+    min-height: 100vh;
+    color: #FFFFFF;
+    justify-content: center;
+        align-items: center;
+}
+
+#what-are-skills4life ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#what-are-skills4life article{
+    display: grid;
+    row-gap: 3rem;
+    background-color: #ffffff29;
+    border-radius: 2rem;
+}
+
+#did-you-know{
+    background: url(../img/grainy-texture.png), var(--pr-colour-2) 0% 0% / 44.40000057220459px 44.40000057220459px repeat;
+    background-image: url(../img/pattern2.png);
+    min-height: 100vh;
+    justify-content: center;
+    color: var(--pr-colour-5);
+    align-items: center;
+}
+
+#did-you-know article {
+    background-color: #ffffff29;
+    border-radius: 2rem;
+    display: grid;
+    row-gap: 30px;
+}
+
+#free-tools-for-anyone{
+    background: url(../img/grainy-texture.png), var(--pr-colour-3) 0% 0% / 44.40000057220459px 44.40000057220459px repeat;
+    background-image: url(../img/pattern2.png);
+    min-height: 100vh;
+    color: #FFFFFF;
+    justify-content: center;
+        align-items: center;
+            grid-template-rows: 1fr 7rem 1fr;
+}
+
+#free-tools-for-anyone article {
+    background-color: #ffffff29;
+    border-radius: 2rem;
+}
+
+#why-capy {
+    background: url(../img/grainy-texture.png), var(--pr-colour-4) 0% 0% / 44.40000057220459px 44.40000057220459px repeat;
+    background-image: url(../img/pattern2.png);
+    min-height: 100vh;
+    color: #FFFFFF;
+    justify-content: center;
+        align-items: center;
+            grid-template-rows: 1fr 7rem 1fr;
+}
+
+#why-capy article {
+    background-color: #ffffff29;
+    border-radius: 2rem;
+}
+
+#collaborate {
+    background: url(../img/grainy-texture.png), var(--pr-colour-2) 0% 0% / 44.40000057220459px 44.40000057220459px repeat;
+    background-image: url(../img/pattern2.png);
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+}

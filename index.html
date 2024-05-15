@@ -1,209 +1,61 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capibility</title>
-    <script src="js/index.js" defer></script>
-    <script src="js/hamburguerAnim.js" defer></script>
-    <script src="js/patternAnim.js" defer></script>
-
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <title>Skills4Life</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
-    <main>
-       <section id="landing-page" class="page">
-            <div id="image-container">
-                
-                <!--------- Header and Nav part ---------->
-                    <header id="mobile-header" class="mobile-header">
-                      <div id="links-mobile">
-                        <ul id="mobile-nav">
-                          <li><a class="underline-hover-effect" href="./index.html">Home</a></li>
-                          <li><a class="underline-hover-effect" href="./portrait.html">Portrait of a Graduate</a></li>
-                          <li><a class="underline-hover-effect" href="./ai-mentorship.html">Ai Mentorship</a></li>
-                          <li><a class="underline-hover-effect" href="./badges.html">Badges</a></li>
-                        </ul>
-                      </div>
-                        
-                    </header>
-                    <header class="header-padding">
-                        <nav class="nav-flex">
-                            <img src="img/Logo.png" class="logo" alt="Capibility Logo">
-                            <div id="links-desktop">
-                              <ul class="desktop-ul">
-                                <li><a class="underline-hover-effect" href="./index.html">Home</a></li>
-                                <li><a class="underline-hover-effect" href="./portrait.html">Portrait of a Graduate</a></li>
-                                <li><a class="underline-hover-effect" href="./ai-mentorship.html">Ai Mentorship</a></li>
-                                <li><a class="underline-hover-effect" href="./badges.html">Badges</a></li>
-                            </ul>
-                            </div>
-                           
-                            <img id="ham" src="img/hambaggar.png" class="hamburguer" alt="">
-                        </nav>
-                    </header>
-                <!---------------------------------------->
+    <div id="nav-container">
+        <nav>
+            <a href="index.html"><img src="img/Skills4Life_Logo.svg" alt="" id="logo"></a>
+            <a href="portrait.html">Portrait of a Graduate</a>
+            <a href="ai-mentorship.html">Ai Mentorship</a>
+            <a href="peer.html">Peer Mentorship</a>
+            <a href="badges.html">Badges</a>
+            <a href="competency.html">Competency Continua</a>
 
-                <!--------- Hero ---------->
-                    <div class="container">
-                      <div class="hero-text-container">
-                         <div class="hero-text">
-                            <h1 class="hero-2" id="title">SKILLS FOR life!</h1>
-                            <p id="intro">Capibility aims to inspire students to embrace the joy of learning while equipping them to become visionary 21st-century leaders!</p>
-                            <a href="https://vaniercollege.omnivox.ca/" target="_blank"><button type="button" class="quiz-btn" id="sign-up"></button></a>
-                            
-                        </div>
-                      </div>
-                       
-                        
-                        
-                    </div>
-                    <div class="svg" id="default-capy-svg"></div>
-                <!------------------------->
-            </div>
-
-
-        </section>
-        <!-- <section id="video" class="page">
-
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/QUqCWkPlLLc?si=Vq-Gapyqs6DHzhyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </section> -->
-        <section id="why-capy" class="page texture">
-          <!-- this section has a grainy texture and is wrapped in a pattern -->
-            <div id="pattern" class="pattern">
-              <div class="why-capy-container">
-                <div class="svg" id="capy-svg"></div>
-                <div class="text">
-                  
-                  <h2 id="section-2-title">Why Capybara?</h2>
-                  <p id="section-2-text">Symbol of Relaxation and Calmness: Capybaras are often associated with relaxation and calmness. They are known for their gentle and easygoing nature. We want convey the message that learning and self-improvement can be a stress-free and enjoyable experience, just like  being around capybaras.</p> 
-                </div>
-                
-              </div>
-              
-
-            </div>
-        </section>
-        <section id="contact" class="page texture">
-          <div class="pattern" id="pattern2">
-            <div class="section-3-wrap">
-              <h2 id="section-3-title">Unlock Your true potential!</h2>
-            <p id="section-3" style="color: black;">If you would like to advance your full potential and get certified real-world experience, join our community today 
-              and take advantage of our free mentoring services!</p>
-            <a href="https://vaniercollege.omnivox.ca/" target="_blank"><button type="button" class="quiz-btn" id="sign-up2">Collaborate with us!</button></a>
-            </div>
-            
-          </div>
-           
-        </section>
-        <section id="quiz" class="page texture">
-            <div id="pattern3">
-              <!-- <style>
-                .video-section {
-                  display: flex;
-                  justify-content: center;
-                  flex-direction: column;
-                  align-items: center;
-                  height: 100vh;
-                  gap: 30px;
-                }
-                .smaller {
-                  width: 50%;
-                }
-              </style> -->
-              <div class="video-section">
-                <h2>LOREM</h2>
-                <iframe width="860" height="515" src="https://www.youtube.com/embed/c0bxIuBY-bI?si=foQf-z0RyYUtZkNH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <p class="smaller">
-                  With one-on-one personalized guidance, 
-                  we will work on essential life skills, including:
-  
-                  Time Management
-                  Networking
-                  Managing your Workload
-                  Building Effective Study Habits
-                </p>
-                <a href="https://vaniercollege.omnivox.ca/" target="_blank"><button type="button" class="quiz-btn" id="sign-up3">Collaborate with us!</button></a>
-              </div>
-            </div>
-        </section>
-
-        <section id="our-partners" class="page">
-          <div class="picture">
-              <img src="img/building21.png" alt="We are parterned with McGill University's Building 21">
-            
-          </div>
-          <div class="picture">
-              <img src="img/vanier.png" alt="Vanier College">
-          </div>
-
-        </section> 
-    </main>
-    
-    <style>
-      footer {
-        padding-top: 300px;
-        padding: 100px 100px;
-        height: 425px;
-      }
-      .footer-grid {
-        font-size: 14px;
-      }
-      /* @media all and (max-width: 480px) {
-        footer {
-          padding-top: 50px;
-        }
-        .col-3{
-          display: none;
-        }
-        .footer-grid {
-          grid-template-columns: 1fr;
-        }
-        .col {
-          text-align: center;
-        }
-        .col a {
-          padding-top: 20px;
-        }
-      }
-      .copyright {
-        display: grid;
-        color: white;
-        text-align: center;
-        margin-top: 320px;
-        font-family: 'Inter', sans-serif;
-      } */
-    </style>
+        </nav>
+    </div>
+    <section id="hero"></section>
+    <section id="what-are-skills4life"></section>
+    <section id="did-you-know"></section>
+    <section id="free-tools-for-anyone"></section>
+    <section id="why-capy"></section>
+    <section id="collaborate"></section>
     <footer id="footer" class="page">
-      <div class="footer-grid">
-        <div class="col col-1">
-          <a href="./portrait.html">Portrait of a Graduate</a>
-          <a href="">AI Mentorship</a>
-          <a href="">Peer Mentorship</a>
-          <a href="">Badge System</a>
+        <div class="footer-grid">
+            <div id="skills-foot">
+                <a href="index.html"><img src="img/Skills4Life_Logo.svg" alt=""></a>
+            </div>
+            <div class="col col-1">
+                <a href="portrait.html">Portrait of a Graduate</a>
+                <a href="ai-mentorship.html">AI Mentorship</a>
+                <a href="peer.html">Peer Mentorship</a>
+                <a href="badges.html">Badge System</a>
+                <a href="competency.html">Competency Continua</a>
+            </div>
+            <div class="col col-2">
+                <img src="img/vanier.png" alt="">
+            </div>
+            
         </div>
-        <div class="col col-2">
-          <a href="">Our mission</a>
-          <a href="">Get involved</a>
-          <a href="">Give us Feedback</a>
-          <!-- Filler -->
-          <a href=""></a>
-        </div>
-        <div class="col col-3">
-          <p>Join us today to improve your skills or help mentor your peers as we work to equip the leaders of tomorrow with skills for life.</p>
-          <button type="button" class="quiz-btn">Collaborate with us!</button>
-        </div>
-      </div>
-      
-
-      <span class="copyright">Copyright © Capibility 2024</span>
+    
+    
+        <span class="copyright">Copyright © Capibility 2024</span>
     </footer>
 
-    </script>
+    <script src="js/index.js"></script>
+    <script src="js/patternAnim.js"></script>
 </body>
+
 </html>

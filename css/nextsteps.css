@@ -1,0 +1,49 @@
+/* next steps styles */
+#next-steps {
+    background: url(../img/grainy-texture.png), var(--pr-colour-3) 0% 0% / 44.40000057220459px 44.40000057220459px repeat;
+    background-image: url(../img/pattern2.png);
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: none;
+}
+
+.next-container{
+    padding-bottom: 2rem;
+}
+
+.el-container{
+    max-width: 50rem;
+    margin: 0 auto;
+    padding-bottom: clamp(1.728rem, -0.875rem + 8.333vw, 4.3rem);
+}
+
+.head-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-wrap p{
+    font-weight: 500;
+}
+
+.accordion {
+    background-color: white;
+    color: black;
+    margin: 0 auto;
+    padding: 18px;
+    border-radius: 12px;
+    transition: 0.25s all;
+    margin-top: 20px;
+}
+
+.white{
+    color: #fff;
+    padding-bottom: 1.5rem;
+}
+
+h5{
+    padding-top: 2rem;
+    font-weight: 700;
+}

@@ -1,557 +1,282 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portrait of a Graduate</title>
-    <script src="js/hamburguerAnim.js" defer></script>
-    <script src="js/patternAnim2.js" defer></script>
-    <script src="js/vectors.js" defer></script>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <title>Skills4Life</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/portrait.css">
+    <link rel="stylesheet" href="css/nextsteps.css">
+
 </head>
+
 <body>
-    <style>
-
-        @media screen and (min-width: 1024px) and (max-height: 1310px) {
-            h2 {
-                font-size: 73px !important;
-                line-height: 70px !important;
-            }
-            .transversal-competencies-p-container {
-                display: flex !important;
-                gap: 30px !important;
-                display: grid !important;
-                gap: 30px !important;
-                grid-template-columns: 1fr 1fr !important;
-            }
-            .el-container {
-                width: 80%;
-            }
-            .numbers {
-                display: grid !important;
-                grid-template-columns: 1fr 1fr !important;
-            }
-            .container-div {
-                width: 50%;
-                margin: 0 auto;
-            }
-            #container-graduate {
-                width: 60% !important;
-            }
-        }
-
-        @media screen and (min-width: 1310px) and (max-height: 2010px) {
-            h2 {
-                font-size: 73px !important;
-                line-height: 70px !important;
-            }
-            .transversal-competencies-p-container {
-                display: flex !important;
-                gap: 30px !important;
-                display: grid !important;
-                gap: 30px !important;
-                grid-template-columns: 1fr 1fr !important;
-            }
-            .el-container {
-                width: 70%;
-            }
-            .numbers {
-                display: grid !important;
-                grid-template-columns: 1fr 1fr !important;
-            }
-            .container-div {
-                width: 50%;
-                margin: 0 auto;
-            }
-            #container-graduate {
-                width: 60% !important;
-            }
-        }
-
-        .infographic{
-            color: #F16622;
-            text-align: center;
-            font-family: Poppins;
-            font-size: 53px;
-            font-style: normal;
-            font-weight: 900;
-            line-height: normal;
-        }
-
-        .infographic2{
-            text-align: center;
-            font-family: Poppins;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 900;
-            line-height: normal;
-            text-transform: capitalize;
-        }
-        
-        h2 {
-            font-size: 43px;
-            line-height: 50px
-        }
-        .quiz-btn {
-            font-size: 20px;
-        }
-        #transversal p, #expectations p, .container-div {
-            background-color: rgba(255, 255, 255, 0.207);
-            border-radius: 22px;
-            padding: 50px 30px;
-            margin-top: 40px;
-        }
-        .container-div {
-            margin-top: 100px;
-        } 
-        .container-div p {
-            color: #062F6C;
-        }
-        .container-div .numbers-txt {
-            margin-top: 40px;
-        }
-        #expectations span {
-            color: white;
-            font-size: 10px;
-            margin-top: 50px;
-            line-height: 20px;
-            font-family: 'Poppins', sans-serif;
-            display: block;
-        }
-        .next-container {
-            margin: 100px 0;
-        }
-        .next-container p {
-            margin-top: 20px;
-        }
-        h3 {
-            color: white;
-            font-weight: 700;
-            margin-top: 100px;
-        }
-        .skill-container p {
-            margin-top: 20px;
-            margin-bottom: 50px;
-        }
-        .transversal-competencies-p-container {
-            display: block;
-        }
-        .el-container {
+    <div id="nav-container">
+        <nav>
+            <a href="index.html"><img src="img/Skills4Life_Logo.svg" alt="" id="logo"></a>
+        <a href="ai-mentorship.html">Ai Mentorship</a>
+        <a href="peer.html">Peer Mentorship</a>
+        <a href="badges.html">Badges</a>
+        <a href="competency.html">Competency Continua</a>
+        </nav>
+    </div>
+        <section id="portrait-hero"></section>
+        <div id="next-steps">
             
-            margin: 50px auto;
-        }
-        .pattern {
-            padding: 10px 15px;
-        }
-        .numbers {
-            display: flex;
-            flex-direction: column;
-        }
-        .number-section {
-            text-align: center;
-        }
+                <div class="el-container">
+                    <div class="next-container">
+                        <h2>Next steps</h2>
+                        <p class="white">In this section, you will find descriptions of what it means to be “good” for the following skills...
+                        </p>
         
-        .container {
-            width: 50%;
-        }
-        .transversal {
-            margin-top: 15%;
-        }
-        #why-important {
-            text-align: center;
-        }
-        #container-graduate {
-            width: 100%;
-        }
-        #entente {
-            color: var(--White, #FFF);
-            text-align: center;
-            font-family: Poppins;
-            font-size: 10px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            width: 50%;
-            margin: 0 auto;
-        }
-    </style>
-    <main>
-        <section id="landing-page" class="page">
-             <div id="image-container-graduate">
-                 
-                 <!--------- Header and Nav part ---------->
-                     <header id="mobile-header" class="mobile-header">
-                       <div id="links-mobile">
-                         <ul id="mobile-nav">
-                           <li><a  href="./index.html">Home</a></li>
-                           <li><a  href="./peer-mentorship.html">Peer Mentorship</a></li>
-                           <li><a  href="./ai-mentorship.html">Ai Mentorship</a></li>
-                           <li><a  href="./badges.html">Badges</a></li>
-                           <li><button type="button" class="lan-btn">FR</button></li>
-                         </ul>
-                       </div>
-                         
-                     </header>
-                     <header class="header-padding">
-                         <nav class="nav-flex">
-                             <img src="img/Logo.png" class="logo" alt="Capibility Logo">
-                             <div id="links-desktop">
-                               <ul class="desktop-ul">
-                                <li><a  href="./index.html">Home</a></li>
-                                <li><a  href="./peer-mentorship.html">Peer Mentorship</a></li>
-                                <li><a  href="./ai-mentorship.html">Ai Mentorship</a></li>
-                                <li><a  href="./badges.html">Badges</a></li>
-                                <li><button type="button" class="lan-btn">FR</button></li>
-                             </ul>
-                             </div>
-                            
-                             <img id="ham" src="img/hambaggar.png" class="hamburguer" alt="">
-                         </nav>
-                     </header>
-                 <!---------------------------------------->
- 
-                 <!--------- Hero ---------->
-                     <div class="container" id="container-graduate">
-                       <div class="hero-text-container">
-                          <div class="hero-text">
-                             <h1 class="hero-3" >Portrait of a Graduate</h1>
-                             <p id="intro">Introduction to the Portrait of a Graduate and the Transversal Skills for Success</p>
-                             <a href="https://vaniercollege.omnivox.ca/" target="_blank"><button type="button" class="quiz-btn" id="sign-up">Learn More</button></a>
-                             
-                         </div>
-                       </div>  
-                     </div>
-                 <!------------------------->
-             </div>
- 
- 
-         </section>
-         <section id="transversal" class="texture">
-            <div id="pattern4" class="pattern">
-                <div class="el-container">
-                    <h2 class="transversal">What are transversal competencies?</h2>
-                    <div class="transversal-competencies-p-container">
-                        <p>Transversal competencies are non-technical, interpersonal skills that enable individuals to interact effectively with others and work efficiently to solve real-world problems. </p>
-                        <p>They include communication, teamwork, critical thinking, adaptability, and time management.</p>   
                     </div>
-                </div>
-                
-
-            </div>
-         </section>
-         <section id="important" class="texture">
-            <div id="pattern5" class="pattern">
-                <div class="el-container">
-                    <h2 id="why-important">Why is this important?</h2>
-                    <div class="container-div">
-                        <div class="numbers">
-                            <div class="number-section">
-                                <h4 class="infographic">4000</h4>
-                                <p class="infographic2">graduating seniors</p>
+        
+                    <div class="skill-container">
+                        <h5>Manage My Work and Set Goals</h5>
+                        <p class="white">I can work effectively with diverse teams to create high quality products.</p>
+                        <div class="accordion">
+                            <div class="head-wrap">
+                                <p>
+                                    I can manage tasks and deadlines.
+                                </p>
+                                <img id="1" src="img/Vector.svg" class="vector-btn" alt="">
                             </div>
-                            <div class="number-section">
-                                <h4 class="infographic">200</h4>
-                                <p class="infographic2">Organizations</p>  
+                            <p id="p1">I use a task management system to keep track of my tasks and due dates.
+                                I consistently submit my work on time.
+                                I finish some of my most important tasks 24 hours before they are due.
+                                I integrate constructive feedback from my peers or teachers into most of my most important work
+                                before I turn it in.</p>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+        
+                        <div class="accordion">
+                            <div class="head-wrap">
+                                <p>
+                                    I can set goals.
+                                </p>
+                                <img id="2" src="img/Vector.svg" class="vector-btn" alt="">
                             </div>
+                            <p id="p2">I can set measurable goals (e.g. SMART goals) to help me grow personally, academically,
+                                and in other areas of focus (e.g., career, college, sports). I can revise my goals as I meet
+                                them and continue to challenge myself.
+                                I can create an action for each goal. This action plan is challenging but not impossible to do.
+                                I can submit weekly reflections that include evidence of my progress towards achieving my goals.
+                                If I am not making progress, I seek support from members in my personal and professional network
+                                who can help me achieve my goals.
+                                I can identify possible barriers to achieving each goal and ways to overcome them.</p>
                         </div>
-                        <p class="numbers-txt">4000 Graduating senior and 200 organizations say that students rate themselves twice as proficient as employers do in transversal skills.</p>
                     </div>
-                </div>
-            </div>
-         </section>
-         <section id="expectations" class="texture">
-            <div id="pattern6" class="pattern">
-                <div class="el-container">
-                    <h2>Expectations for Cégep Students</h2>
-                    <div class="transversal-competencies-p-container">
-                                           <p>The project has many different elements. This particular element, the Portrait of a Graduate, aims to more clearly define what it means to be “competent” (i.e. awesome, confident, capable, etc.) for our students in these skills. </p>
-                    <p>Our belief is that if our Vanier community could find some common ground on how to define these skills and what it means to be “good” at them. Students, teachers and community members could be even more motivated to develop these skills inside and outside of the classroom.</p> 
-                    </div>
-
-                    <span id="entente">This project was funded by Entente-Canada Quebec to propose different ways to help students develop transversal skills both in and outside of the classroom. </span>
-                </div>
-               
-            </div>
-         </section>
-
-         <div id="next-steps">
-            <div id="pattern7" class="pattern">
-                <div class="el-container">
-                <div class="next-container">
-                    <h2>Next steps</h2>
-                <p>In this section, you will find descriptions of what it means to be “good” for the following skills...</p>
-
-                </div>
-                
-                <div class="skill-container">
-                    <h3>Manage My Work and Set Goals</h3>
-                    <p>I can work effectively with diverse teams to create high quality products.</p>
-                    <div class="accordion">
-                        <div class="head-wrap">
-                            <h4>
-                                I can manage tasks and deadlines.
-                            </h4>
-                            <img id="1" src="img/Vector.svg" class="vector-btn" alt="">
+                    <div class="skill-container">
+                        <div class="accordion">
+                            <div class="head-wrap">
+                                <p>
+                                    I can be organized and prepared.
+                                </p>
+                                <img id="3" src="img/Vector.svg" class="vector-btn" alt="">
+                            </div>
+                            <p id="p3">I always have all of my materials and have completed all of the work I need for my studio
+                                so that I am ready to learn.
+                                I have my own process or strategy for keeping my things organized, safe, and in good condition.
+                                I take good care of things for which I am responsible.
+                                I am able to keep my digital files and folders organized.
+                            </p>
                         </div>
-                        <p id="p1">I use a task management system to keep track of my tasks and due dates.
-                            I consistently submit my work on time.
-                            I finish some of my most important tasks 24 hours before they are due.
-                            I integrate constructive feedback from my peers or teachers into most of my most important work before I turn it in.</p>
                     </div>
-                </div>
-                <div class="skill-container">
-
-                    <div class="accordion">
-                        <div class="head-wrap">
-                            <h4>
-                                I can set goals.
-                            </h4>
-                            <img id="2" src="img/Vector.svg" class="vector-btn" alt="">
+                    <div class="skill-container">
+                        <div class="accordion">
+                            <div class="head-wrap">
+                                <p>
+                                    I can stay focused and on task.
+                                </p>
+                                <img id="4" src="img/Vector.svg" class="vector-btn" alt="">
+                            </div>
+                            <p id="p4">I can stay focused on a task without needing guidance or supervision.
+                                I can adapt to different learning environments and have multiple strategies to keep my focus.
+                            </p>
                         </div>
-                        <p id="p2">I can set measurable goals (e.g. SMART goals) to help me grow personally, academically, and in other areas of focus (e.g., career, college, sports). I can revise my goals as I meet them and continue to challenge myself.
-                            I can create an action for each goal. This action plan is challenging but not impossible to do.
-                            I can submit weekly reflections that include evidence of my progress towards achieving my goals. If I am not making progress, I seek support from members in my personal and professional network who can help me achieve my goals.
-                            I can identify possible barriers to achieving each goal and ways to overcome them.</p>
                     </div>
-                </div>
-                <div class="skill-container">
-                    <div class="accordion">
-                        <div class="head-wrap">
-                            <h4>
-                                I can be organized and prepared.
-                            </h4>
-                            <img id="3" src="img/Vector.svg" class="vector-btn" alt="">
+                    <div class="skill-container">
+                        <div class="accordion">
+                            <div class="head-wrap">
+                                <p>
+                                    I can get feedback and improve my work.
+                                </p>
+                                <img id="5" src="img/Vector.svg" class="vector-btn" alt="">
+                            </div>
+                            <p id="p5">I can use the continua to identify specific ways that I can improve my work and get to
+                                the next level in each skill area.
+                                I understand that I am always able to take initiative to re vise my work and continually improve
+                                it.
+                                I seek and use feedback from my teachers and peers to improve my work.
+                            </p>
                         </div>
-                        <p id="p3">I always have all of my materials and have completed all of the work I need for my studio so that I am ready to learn.
-                            I have my own process or strategy for keeping my things organized, safe, and in good condition.
-                            I take good care of things for which I am responsible.
-                            I am able to keep my digital files and folders organized.
-                        </p>
                     </div>
-                </div>
-                <div class="skill-container">
-                    <div class="accordion">
-                        <div class="head-wrap">
-                            <h4>
-                                I can stay focused and on task.
-                            </h4>
-                            <img id="4" src="img/Vector.svg" class="vector-btn" alt="">
+                    <div class="skill-container">
+                        <h5>Collaborate Effectively</h5>
+                        <p class="white">I can work effectively with diverse teams to create high quality products.</p>
+                        <div class="accordion">
+                            <div class="head-wrap">
+                                <p>
+                                    Interact and participate effectively with others
+                                </p>
+                                <img id="6" src="img/Vector.svg" class="vector-btn" alt="">
+                            </div>
+                            <p id="p6">I can co-create norms with my team and I can non-judgmentally call out when norms are
+                                being violated.
+                                I can identify or choose my role and I understand how I am expected to interact with my team. I
+                                can support other team members when they need help.
+                                I can contribute to our positive work environment and help build strong team relationships among
+                                my peers.
+                                I can actively listen and acknowledge and respect the perspectives of my team members.
+                                I can participate in team work sessions and express my ideas. I can ask clarifying questions to
+                                better understand my team members (when applicable).
+                            </p>
                         </div>
-                        <p id="p4">I can stay focused on a task without needing guidance or supervision.
-                            I can adapt to different learning environments and have multiple strategies to keep my focus.
-                        </p>
                     </div>
-                </div>
-                <div class="skill-container">
-                    <div class="accordion">
-                        <div class="head-wrap">
-                            <h4>
-                                I can get feedback and improve my work.
-                            </h4>
-                            <img id="5" src="img/Vector.svg" class="vector-btn" alt="">
+                    <div class="skill-container">
+                        <div class="accordion">
+                            <div class="head-wrap">
+                                <p>
+                                    Complete my part of the work
+                                </p>
+                                <img id="7" src="img/Vector.svg" class="vector-btn" alt="">
+                            </div>
+                            <p id="p7">I can highly prioritize all team meetings, but when I cannot attend, I tell my team
+                                before the meeting and send all work products for which I am responsible. I then follow up after
+                                to see what I missed.
+                                I can complete my work on time or early to meet our team deadlines. I can make sure my team
+                                members are aware of our deadlines.
+                                I can bring my tasks to the team for multiple rounds of feedback and revisions. My final
+                                contributions are high quality and meet all requirements for our project.
+                            </p>
                         </div>
-                        <p id="p5">I can use the continua to identify specific ways that I can improve my work and get to the next level in each skill area.
-                            I understand that I am always able to take initiative to re vise my work and continually improve it.
-                            I seek and use feedback from my teachers and peers to improve my work.
-                        </p>
                     </div>
-                </div>
-                <div class="skill-container">
-                    <h3>Collaborate Effectively</h3>
-                    <p>I can work effectively with diverse teams to create high quality products.</p>
-                    <div class="accordion">
-                        <div class="head-wrap">
-                            <h4>
-                                Interact and participate effectively with others
-                            </h4>
-                            <img id="6" src="img/Vector.svg" class="vector-btn" alt="">
+                    <div class="skill-container">
+                        <div class="accordion">
+                            <div class="head-wrap">
+                                <p>
+                                    Manage and resolve conflicts
+                                </p>
+                                <img id="8" src="img/Vector.svg" class="vector-btn" alt="">
+                            </div>
+                            <p id="p8">I can brainstorm ideas to manage and resolve a conflict. I can consider the feelings and
+                                perspectives of all parties involved.
+                                I can work with others to determine which solution will provide the most benefit to all involved
+                                in the conflict and I can help to implement the solution.
+                                I can take responsibility for my role in the conflict and I can take appropriate action to
+                                repair any damaged relationships, property, etc.
+                            </p>
                         </div>
-                        <p id="p6">I can co-create norms with my team and I can non-judgmentally call out when norms are being violated.
-                            I can identify or choose my role and I understand how I am expected to interact with my team. I can support other team members when they need help.
-                            I can contribute to our positive work environment and help build strong team relationships among my peers.
-                            I can actively listen and acknowledge and respect the perspectives of my team members.
-                            I can participate in team work sessions and express my ideas. I can ask clarifying questions to better understand my team members (when applicable).
-                        </p>
                     </div>
-                </div>
-                <div class="skill-container">
-                    <div class="accordion">
-                        <div class="head-wrap">
-                            <h4>
-                                Complete my part of the work
-                            </h4>
-                            <img id="7" src="img/Vector.svg" class="vector-btn" alt="">
+                    <div class="skill-container">
+                        <div class="accordion">
+                            <div class="head-wrap">
+                                <p>
+                                    Reflect on our product and process
+                                </p>
+                                <img id="9" src="img/Vector.svg" class="vector-btn" alt="">
+                            </div>
+                            <p id="p9">With my team, I can discuss and reflect on our strengths and our opportunities for growth
+                                in both our product and our process of working together.
+                                I can reflect on my personal strengths and on my opportunities for growth. I can set a goal for
+                                growth in one area as well as specific next steps I can take to build my skills or strategies in
+                                this area.
+                            </p>
                         </div>
-                        <p id="p7">I can highly prioritize all team meetings, but when I cannot attend, I tell my team before the meeting and send all work products for which I am responsible. I then follow up after to see what I missed.
-                            I can complete my work on time or early to meet our team deadlines. I can make sure my team members are aware of our deadlines.
-                            I can bring my tasks to the team for multiple rounds of feedback and revisions. My final contributions are high quality and meet all requirements for our project.
-                        </p>
                     </div>
-                </div>
-                <div class="skill-container">
-                    <div class="accordion">
-                        <div class="head-wrap">
-                            <h4>
-                                Manage and resolve conflicts
-                            </h4>
-                            <img id="8" src="img/Vector.svg" class="vector-btn" alt="">
+        
+                    <div class="skill-container">
+                        <h5>Building Networks</h5>
+                        <p class="white">I can build relationships with diverse individuals and expand my network of people who can help and
+                            support me.</p>
+                        <div class="accordion">
+                            <div class="head-wrap">
+                                <p>
+                                    Build positive relationships
+                                </p>
+                                <img id="10" src="img/Vector.svg" class="vector-btn" alt="">
+                            </div>
+                            <p id="p10">I can identify and participate in formal and informal interactions with people who have
+                                interests, perspectives, experiences, or strengths that I can learn from.
+                                I can actively seek out opportunities to meet people who work in my career field of interest to
+                                get more information and to build my network.
+                                I can use my network to connect me with new people that can help me achieve my goals.
+                            </p>
                         </div>
-                        <p id="p8">I can brainstorm ideas to manage and resolve a conflict. I can consider the feelings and perspectives of all parties involved.
-                            I can work with others to determine which solution will provide the most benefit to all involved in the conflict and I can help to implement the solution.
-                            I can take responsibility for my role in the conflict and I can take appropriate action to repair any damaged relationships, property, etc.
-                        </p>
-                    </div>
-                </div>
-                <div class="skill-container">
-                    <div class="accordion">
-                        <div class="head-wrap">
-                            <h4>
-                                Reflect on our product and process
-                            </h4>
-                            <img id="9" src="img/Vector.svg" class="vector-btn" alt="">
+                        <div class="accordion">
+                            <div class="head-wrap">
+                                <p>
+                                    Seek support and resources
+                                </p>
+                                <img id="11" src="img/Vector.svg" class="vector-btn" alt="">
+                            </div>
+                            <p id="p11">When I complete a final product, project or performance, I can reflect on the people who
+                                supported me and how they helped me to achieve my goals.
+                                I can follow up with the individuals who help and support me to express my gratitude.
+                                I can think in advance about the types of support I need, and figure out who the best person
+                                within my network is to go to for help.
+                                I can clearly articulate what I need help with and why.
+                            </p>
                         </div>
-                        <p id="p9">With my team, I can discuss and reflect on our strengths and our opportunities for growth in both our product and our process of working together.
-                            I can reflect on my personal strengths and on my opportunities for growth. I can set a goal for growth in one area as well as specific next steps I can take to build my skills or strategies in this area.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="skill-container">
-                    <h3>Building Networks</h3>
-                    <p>I can build relationships with diverse individuals and expand my network of people who can help and support me.</p>
-                    <div class="accordion">
-                        <div class="head-wrap">
-                            <h4>
-                                Build positive relationships
-                            </h4>
-                            <img id="10" src="img/Vector.svg" class="vector-btn" alt="">
+                        <div class="accordion">
+                            <div class="head-wrap">
+                                <p>
+                                    Create and maintain a positive digital/online footprint
+                                </p>
+                                <img id="12" src="img/Vector.svg" class="vector-btn" alt="">
+                            </div>
+                            <p id="p12">I can use social media responsibly and effectively to connect with people I know and
+                                begin to build my network.
+                                I can demonstrate my understanding that everything that I do online leaves a footprint that
+                                cannot be undone by using privacy settings and by being thoughtful about the things I post or
+                                write (e.g. text messages, snapchats, comments, videoes, pictures, etc.). 
+                                I can think about how what I write and post will make others feel and I make sure I don't write
+                                or post anything I wouldn't want my parent, teacher, prospective employer, and/or college
+                                admissions counselor to see.
+                                I can check my online profiles regularly to see what comments have been posted and I can block
+                                or unfriend people who are posting comments that are inappropriate.
+                                I can regularly use a search engine (e.g. Google, Bing, etc.) to look for online records of
+                                myself to see what is online about me. I can evaluate whether or not digital me is an accurate
+                                representation of real-life me.
+                            </p>
                         </div>
-                        <p id="p10">I can identify and participate in formal and informal interactions with people who have interests, perspectives, experiences, or strengths that I can learn from.
-                            I can actively seek out opportunities to meet people who work in my career field of interest to get more information and to build my network.
-                            I can use my network to connect me with new people that can help me achieve my goals.
-                        </p>
                     </div>
-                    <div class="accordion">
-                        <div class="head-wrap">
-                            <h4>
-                                Seek support and resources
-                            </h4>
-                            <img id="11" src="img/Vector.svg" class="vector-btn" alt="">
-                        </div>
-                        <p id="p11">When I complete a final product, project or performance, I can reflect on the people who supported me and how they helped me to achieve my goals.
-                            I can follow up with the individuals who help and support me to express my gratitude.
-                            I can think in advance about the types of support I need, and figure out who the best person within my network is to go to for help.
-                            I can clearly articulate what I need help with and why.
-                        </p>
                     </div>
-                    <div class="accordion">
-                        <div class="head-wrap">
-                            <h4>
-                                Create and maintain a positive digital/online footprint
-                            </h4>
-                            <img id="12" src="img/Vector.svg" class="vector-btn" alt="">
-                        </div>
-                        <p id="p12">I can use social media responsibly and effectively to connect with people I know and begin to build my network.
-                            I can demonstrate my understanding that everything that I do online leaves a footprint that cannot be undone by using privacy settings and by being thoughtful about the things I post or write (e.g. text messages, snapchats, comments, videoes, pictures, etc.). 
-                            I can think about how what I write and post will make others feel and I make sure I don't write or post anything I wouldn't want my parent, teacher, prospective employer, and/or college admissions counselor to see.
-                            I can check my online profiles regularly to see what comments have been posted and I can block or unfriend people who are posting comments that are inappropriate.
-                            I can regularly use a search engine (e.g. Google, Bing, etc.) to look for online records of myself to see what is online about me. I can evaluate whether or not digital me is an accurate representation of real-life me.
-                        </p>
                     </div>
-                </div>
-
-                <div class="skill-container">
-                    <h3>Ethics</h3>
-                    <p>I can understand ethical issues and engage with others in an ethical manner.</p>
-                    <div class="accordion">
-                        <div class="head-wrap">
-                            <h4>
-                                Understand the impact of context and perspective on ethics
-                            </h4>
-                            <img id="13" src="img/Vector.svg" class="vector-btn" alt="">
-                        </div>
-                        <p id="p13">I can critically analyze and evaluate diverse views on complex and controversial ethical issues in a global context and can debate them in an informed and respectful manner, while justifying my position with rational arguments.
-                            I can explain how different views and contexts can influence our perception of ethical issues and how these perspectives can shape what we believe is right or wrong on a societal level.</p>
-                    </div>
-                    <div class="accordion">
-                        <div class="head-wrap">
-                            <h4>
-                                Make ethical choices that are fair and just
-                            </h4>
-                            <img id="14" src="img/Vector.svg" class="vector-btn" alt="">
-                        </div>
-                        <p id="p14">I can engage in actions that consider the ethical impacts on a societal level.
-                            I can take responsibility for my actions and take steps to make amends when I make an error.
-                            I am aware of, and act in accordance with, my responsibilities on a societal level.
-                            I can explore the impact of fairness and justice on different communities and take action to support equity across communities.</p>
-                    </div>
-                </div>
-            </div>
-            </div>
+        <section id="collaborate"></section>
+<footer id="footer" class="page">
+    <div class="footer-grid">
+        <div id="skills-foot">
+            <a href="index.html"><img src="img/Skills4Life_Logo.svg" alt=""></a>
         </div>
-        </main>
-        <style>
-            footer {
-              padding-top: 300px;
-              padding: 100px 100px;
-              height: 425px;
-            }
-            .footer-grid {
-              font-size: 14px;
-            }
-            @media all and (max-width: 480px) {
-              footer {
-                padding-top: 50px;
-              }
-              .col-3{
-                display: none;
-              }
-              .footer-grid {
-                grid-template-columns: 1fr;
-              }
-              .col {
-                text-align: center;
-              }
-              .col a {
-                padding-top: 20px;
-              }
-            }
-            .copyright {
-              display: grid;
-              color: white;
-              text-align: center;
-              margin-top: 320px;
-              font-family: 'Inter', sans-serif;
-            }
-          </style>
-        <footer id="footer" class="page">
-            <div class="footer-grid">
-              <div class="col col-1">
-                <a href="./portrait.html">Portrait of a Graduate</a>
-                <a href="">AI Mentorship</a>
-                <a href="">Peer Mentorship</a>
-                <a href="">Badge System</a>
-              </div>
-              <div class="col col-2">
-                <a href="">Our mission</a>
-                <a href="">Get involved</a>
-                <a href="">Give us Feedback</a>
-                <!-- Filler -->
-                <a href=""></a>
-              </div>
-              <div class="col col-3">
-                <p>Join us today to improve your skills or help mentor your peers as we work to equip the leaders of tomorrow with skills for life.</p>
-                <button type="button" class="quiz-btn">Sign Up</button>
-              </div>
-            </div>
-            
-      
-            <span class="copyright">Copyright © Capibility 2024</span>
-          </footer>
+        <div class="col col-1">
+            <a href="portrait.html">Portrait of a Graduate</a>
+            <a href="ai-mentorship.html">AI Mentorship</a>
+            <a href="peer.html">Peer Mentorship</a>
+            <a href="badges.html">Badge System</a>
+            <a href="competency.html">Competency Continua</a>
+        </div>
+        <div class="col col-2">
+            <img src="img/vanier.png" alt="">
+        </div>
+
+    </div>
+
+
+    <span class="copyright">Copyright © Capibility 2024</span>
+</footer>
+
+
+    <script src="js/index.js"></script>
+    <script src="js/patternAnim.js"></script>
+    <script src="js/arrow.js"></script>
 </body>
+
 </html>
